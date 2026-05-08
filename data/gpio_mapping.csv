@@ -1,0 +1,24 @@
+grupo,senal_funcion,gpio,conector,pin_conector,tipo,pullup,notas
+Botones frontales,Triangulo,GPIO14,JP1/JP2,6/1,INPUT,PULLUP interno,AF_TRIANGULO - SW7 Placa_2
+Botones frontales,Circulo,GPIO26,JP1/JP2,7/2,INPUT,PULLUP interno,AF_CIRCULO - SW3 Placa_2
+Botones frontales,Cuadrado,GPIO12,JP1/JP2,4/6,INPUT,PULLUP interno,AF_CUADRADO - SW6 Placa_2
+Botones frontales,Cruz,GPIO25,JP1/JP2,8/4,INPUT,PULLUP interno,AF_CRUZ - SW2 Placa_2
+Botones laterales,L1,GPIO27,JP1/JP4,7/5,INPUT,PULLUP interno,AF_L1 - SW1 Placa_2
+Botones laterales,L2,GPIO32,JP1/JP4,10/4,INPUT,PULLUP interno,AF_L2 - SW4 Placa_2
+Botones laterales,R1,GPIO33,JP1/JP4,8/1,INPUT,PULLUP interno,AF_R1 - SW5 Placa_2
+Botones laterales,R2,GPIO13,JP1/JP4,3/7,INPUT,PULLUP interno,AF_R2 - SW8 Placa_2
+D-Pad,Arriba,GPIO36,JP3,8,INPUT ONLY,10k externo R1,Sin pull-up interno
+D-Pad,Abajo,GPIO34,JP3,2,INPUT ONLY,10k externo R4,Sin pull-up interno
+D-Pad,Izquierda,GPIO35,JP3,4,INPUT ONLY,10k externo R3,Sin pull-up interno
+D-Pad,Derecha,GPIO39,JP3,6,INPUT ONLY,10k externo R5,Sin pull-up interno
+Start Select,START,GPIO2,JP1/START1,12/-,INPUT,PULLUP interno + R6 15k,SW_Push_Dual
+Start Select,SELECT,GPIO16,JP1/SELECT1,12/-,INPUT,PULLUP interno + R7 15k,SW_Push_Dual
+PS1 SPI,PS1_DATA,GPIO19,PS1_Conn,1,OUTPUT,R1 1k a 3V3,Mando a consola
+PS1 SPI,PS1_CMD,GPIO23,PS1_Conn,2,INPUT,,Consola a mando
+PS1 SPI,PS1_ATT,GPIO5,PS1_Conn,6,INPUT,,LOW = consola iniciando comunicacion
+PS1 SPI,PS1_CLK,GPIO18,PS1_Conn,7,INPUT,,Reloj aprox 250kHz
+PS1 SPI,PS1_ACK,GPIO4,PS1_Conn,8,OUTPUT,,Pulso LOW aprox 2us
+AutoFire,AF_MODE,GPIO15,JP1,2,INPUT,PULLUP interno,SW9 Placa_2
+Power,BATT_FROM_TP,VIN,JP1,12,PWR,,SW10 Placa_2 - Encendido modo BT
+Power,VCC_3V3,3V3,JP1,1,PWR,,Alimenta Placa_2
+Power,GND,GND,JP1,13,GND,,Referencia comun
