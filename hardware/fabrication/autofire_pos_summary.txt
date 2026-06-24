@@ -1,0 +1,10 @@
+AutoFire POS V2
+
+All components are on top side.
+
+D1 LED
+J1 connector 1x13
+R1 220 ohm
+SW1 to SW10 SPDT switches
+
+Source file uploaded: AutoFire_POS.csv
