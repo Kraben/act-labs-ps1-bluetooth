@@ -1,0 +1,8 @@
+AutoFire BOM V2
+
+D1 LED quantity 1
+J1 connector 1x13 quantity 1
+R1 220 ohm quantity 1
+SW1 to SW10 SPDT switches quantity 10 total
+
+Source file uploaded: AutoFire_BOM.csv
