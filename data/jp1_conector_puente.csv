@@ -1,0 +1,14 @@
+pin_jp1,senal,desde,hacia,gpio_esp32,descripcion
+1,VCC_3V3,Placa Principal,Placa_2,3V3,Alimentacion 3.3V hacia Placa_2
+2,AF_MODE,Placa_2 SW9,ESP32,GPIO15,Modo turbo global
+3,AF_R2,Placa_2 SW8,ESP32,GPIO13,Turbo R2
+4,AF_CUADRADO,Placa_2 SW6,ESP32,GPIO12,Turbo Cuadrado
+5,,,,NC,No conectado
+6,AF_TRIANGULO,Placa_2 SW7,ESP32,GPIO14,Turbo Triangulo
+7,AF_L1,Placa_2 SW1,ESP32,GPIO27,Turbo L1
+8,AF_R1,Placa_2 SW5,ESP32,GPIO33,Turbo R1
+9,AF_CRUZ,Placa_2 SW2,ESP32,GPIO25,Turbo Cruz
+10,AF_CIRCULO,Placa_2 SW3,ESP32,GPIO26,Turbo Circulo
+11,AF_L2,Placa_2 SW4,ESP32,GPIO32,Turbo L2
+12,BATT_FROM_TP,Placa_2 SW10,ESP32 VIN + D1,VIN,Encendido modo BT - pasa por D1 SS14
+13,GND,Placa Principal,Placa_2,GND,Referencia comun
