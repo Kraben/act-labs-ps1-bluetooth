@@ -1,0 +1,6 @@
+.DS_Store
+.history/
+ACT_Labs_REX-backups/
+
+*.lck
+*.kicad_prl
