@@ -1,8 +1,8 @@
 # ACT Labs PS1 Bluetooth / AutoFire
 
-Documentación técnica consolidada para la conversión de un tablero ACT-LABS / PS1 a control PS1-Bluetooth usando ESP32, con soporte para modo PS1, modo Bluetooth HID y placa secundaria de AutoFire.
+Documentación técnica consolidada para la conversión de un tablero ACT-LABS / PS1 a control híbrido PS1-Bluetooth usando ESP32, con soporte para modo PS1, modo Bluetooth HID y placa secundaria AutoFire.
 
-> Estado: documentación inicial basada en esquemáticos KiCad, PCB exportado y mapeo consolidado en Excel.
+> Estado actual: Hardware V2 / PCB V2.2, BLE operativo y protocolo PS1 en depuración de ACK/DATA.
 
 ## Contenido del repositorio
 
@@ -15,9 +15,18 @@ Documentación técnica consolidada para la conversión de un tablero ACT-LABS /
 │   ├── conectores.md
 │   ├── autofire.md
 │   ├── firmware.md
-│   └── bom.md
+│   ├── bom.md
+│   ├── fabricacion.md
+│   └── revision-v2.md
 ├── hardware/
 │   ├── README.md
+│   ├── fabrication/
+│   │   ├── ACT_Labs_REX_BOM.csv
+│   │   ├── ACT_Labs_REX_POS.csv
+│   │   ├── AutoFire_BOM.csv
+│   │   └── AutoFire_POS.csv
+│   ├── kicad/
+│   │   └── SOURCES.md
 │   ├── pdf/
 │   │   ├── ACT_Labs_REX.pdf
 │   │   ├── ArcLabsPCB.pdf
@@ -40,37 +49,49 @@ Documentación técnica consolidada para la conversión de un tablero ACT-LABS /
 
 ## Resumen del proyecto
 
-El sistema usa un ESP32 como controlador principal. Dependiendo del estado de `PS1_ATT` al arranque, el firmware puede operar como emulador de control digital PS1 o como gamepad Bluetooth HID. La placa secundaria AutoFire agrega interruptores SPDT para activar turbo por botón y un interruptor de encendido desde batería.
+El sistema usa un ESP32 DevKit V1 como controlador principal. El mismo hardware debe poder funcionar en dos escenarios:
+
+1. **Modo PS1/PS2 cableado**: el ESP32 emula un control digital PS1 usando DATA, CMD, ATT, CLK y ACK.
+2. **Modo Bluetooth HID**: el ESP32 funciona como gamepad BLE cuando se usa con batería.
+3. **AutoFire**: una placa secundaria con switches SPDT permite activar turbo por botón y controlar el encendido desde batería.
+
+## Estado técnico V2
+
+| Área | Estado |
+|---|---|
+| Hardware | V2 / PCB V2.2 |
+| KiCad | Archivos generados en KiCad 10 |
+| BLE | Operativo |
+| PS1 | En depuración de ACK/DATA |
+| Alimentación | TP4056 externo, batería PS Vita 3.7 V, LD1117-3.3 y diodo Schottky |
 
 ## Referencias rápidas
 
-- Esquemático principal: [`hardware/pdf/ACT_Labs_REX.pdf`](hardware/pdf/ACT_Labs_REX.pdf)
-- PCB principal: [`hardware/pdf/ArcLabsPCB.pdf`](hardware/pdf/ArcLabsPCB.pdf)
-- Esquemático AutoFire: [`hardware/pdf/AutoFire.pdf`](hardware/pdf/AutoFire.pdf)
-- PCB AutoFire: [`hardware/pdf/AutoFirePCB.pdf`](hardware/pdf/AutoFirePCB.pdf)
+- Esquemático principal PDF: [`hardware/pdf/ACT_Labs_REX.pdf`](hardware/pdf/ACT_Labs_REX.pdf)
+- PCB principal PDF: [`hardware/pdf/ArcLabsPCB.pdf`](hardware/pdf/ArcLabsPCB.pdf)
+- Esquemático AutoFire PDF: [`hardware/pdf/AutoFire.pdf`](hardware/pdf/AutoFire.pdf)
+- PCB AutoFire PDF: [`hardware/pdf/AutoFirePCB.pdf`](hardware/pdf/AutoFirePCB.pdf)
+- BOM/POS de fabricación: [`hardware/fabrication/`](hardware/fabrication/)
+- Inventario de fuentes KiCad recibidas: [`hardware/kicad/SOURCES.md`](hardware/kicad/SOURCES.md)
 - Mapeo completo: [`data/ACT_Labs_Mapeo_Consolidado.xlsx`](data/ACT_Labs_Mapeo_Consolidado.xlsx)
 
-## Pines principales
+## Pines principales PS1 V2
 
-| Grupo | Señales |
-|---|---|
-| Botones frontales | Triángulo, Círculo, Cuadrado, Cruz |
-| Botones laterales | L1, L2, R1, R2 |
-| D-Pad | Arriba, Abajo, Izquierda, Derecha |
-| PS1 SPI | DATA, CMD, ATT, CLK, ACK |
-| AutoFire | AF_MODE, señales AF por botón |
-| Alimentación | VCC_3V3, GND, BATT_FROM_TP, VIN |
+| Señal | GPIO |
+|---|---:|
+| DATA | 19 |
+| CMD | 23 |
+| ATT | 5 |
+| CLK | 18 |
+| ACK | 4 |
+| START | 21 |
+| SELECT | 22 |
+| AF_MODE | 15 |
 
-## Modo de operación previsto
+## Próximos pasos
 
-1. **Modo PS1**: si `PS1_ATT` está en LOW al arrancar, la consola está activa y se usa emulación SPI.
-2. **Modo Bluetooth**: si `PS1_ATT` está en HIGH al arrancar, no hay consola conectada y se anuncia como HID Gamepad BLE.
-3. **AutoFire**: si un GPIO permanece en LOW más de 150 ms, se interpreta como turbo activo; se sugiere alternancia de 50 ms ON / 50 ms OFF.
-
-## Cómo continuar
-
-1. Revisar esquemáticos y validar continuidad contra PCB físico.
-2. Confirmar polaridad de botones: activo en LOW con pull-up interno o externo.
-3. Implementar y probar firmware por etapas: lectura GPIO, PS1 SPI, HID BLE y turbo.
-4. Agregar capturas/fotos de ensamblaje real en `hardware/images/`.
-5. Documentar errores conocidos y revisiones en issues del repositorio.
+1. Validar continuidad entre PCB principal, placa AutoFire y conectores JP.
+2. Revisar la ruta de alimentación `BATT_FROM_TP`, TP4056, LD1117-3.3 y D1.
+3. Depurar ACK/DATA del protocolo PS1 con analizador lógico.
+4. Confirmar pull-ups de DATA/ACK a 4.7 kΩ según V2.
+5. Mantener BOM/POS exportados desde KiCad antes de fabricar.
