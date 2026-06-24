@@ -17,14 +17,14 @@ Esta carpeta contiene referencias de hardware, PDFs, imágenes, exportaciones de
 
 ## Fabricación
 
-Archivos CSV exportados desde KiCad:
+Archivos de resumen derivados de las exportaciones KiCad recibidas:
 
-- `fabrication/ACT_Labs_REX_BOM.csv`: BOM de placa principal.
-- `fabrication/ACT_Labs_REX_POS.csv`: posiciones de componentes de placa principal.
-- `fabrication/AutoFire_BOM.csv`: BOM de placa AutoFire.
-- `fabrication/AutoFire_POS.csv`: posiciones de componentes de placa AutoFire.
+- `fabrication/ACT_Labs_REX_BOM_summary.csv`: BOM resumido de placa principal.
+- `fabrication/ACT_Labs_REX_POS_summary.csv`: posiciones resumidas de placa principal.
+- `fabrication/autofire_bom_summary.txt`: BOM resumido de placa AutoFire.
+- `fabrication/autofire_pos_summary.txt`: posiciones resumidas de placa AutoFire.
 
-Resumen de exportaciones:
+Resumen de exportaciones recibidas:
 
 | Placa | BOM | POS | Componentes |
 |---|---:|---:|---:|
