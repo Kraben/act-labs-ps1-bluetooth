@@ -21,10 +21,10 @@ Documentación técnica consolidada para la conversión de un tablero ACT-LABS /
 ├── hardware/
 │   ├── README.md
 │   ├── fabrication/
-│   │   ├── ACT_Labs_REX_BOM.csv
-│   │   ├── ACT_Labs_REX_POS.csv
-│   │   ├── AutoFire_BOM.csv
-│   │   └── AutoFire_POS.csv
+│   │   ├── ACT_Labs_REX_BOM_summary.csv
+│   │   ├── ACT_Labs_REX_POS_summary.csv
+│   │   ├── autofire_bom_summary.txt
+│   │   └── autofire_pos_summary.txt
 │   ├── kicad/
 │   │   └── SOURCES.md
 │   ├── pdf/
