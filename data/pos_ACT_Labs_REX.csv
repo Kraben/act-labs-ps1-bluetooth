@@ -1,0 +1,41 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"C1","220µF","CP_Radial_D6.3mm_P2.50mm",8.005906,-1.994001,-90.000000,bottom
+"C3","10µF","CP_Radial_D6.3mm_P2.50mm",6.924606,-3.322835,-90.000000,bottom
+"C4","10µF","CP_Radial_D6.3mm_P2.50mm",6.919291,-3.017717,-90.000000,bottom
+"D1","SS14","D_SMA",8.097244,-2.667323,-90.000000,bottom
+"D3","SS14","D_SMA",6.917717,-2.786220,90.000000,bottom
+"J6","JP6 Autofire","PinHeader_1x13_P2.54mm_Vertical",3.534055,-2.811024,-90.000000,bottom
+"JP1","SolderJumper_2_Open","SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm",8.094882,-2.906299,90.000000,bottom
+"JP2","SolderJumper_2_Open","SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm",8.072638,-5.506299,180.000000,bottom
+"JP3","SolderJumper_2_Open","SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm",7.482087,-5.504331,0.000000,bottom
+"R1","10kΩ","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",7.679921,-2.430709,-90.000000,bottom
+"R8","220Ω","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",4.503000,-3.619000,-30.000000,bottom
+"Select1","SW_Omron_B3FS","SW_SPST_Omron_B3F-50xx",7.391102,-4.841843,-90.000000,bottom
+"Start1","SW_Omron_B3FS","SW_SPST_Omron_B3F-50xx",7.961969,-4.841843,-90.000000,bottom
+"C2","100nF","C_Disc_D3.0mm_W1.6mm_P2.50mm",7.575591,-1.978346,90.000000,top
+"D2","LED","LED_D3.0mm",4.408268,-3.934646,0.000000,top
+"H1","TP4056","MountingHole_2.5mm_Pad",6.879874,-1.738724,0.000000,top
+"H2","TP4056","MountingHole_2.5mm_Pad",6.875874,-2.052724,0.000000,top
+"J1","PS1_Connector1","PinHeader_1x09_P2.54mm_Vertical",7.900000,-3.134252,180.000000,top
+"J2","JP1 Autofire","PinHeader_1x13_P2.54mm_Vertical",8.333874,-1.128283,-90.000000,top
+"J3","JP3 Palanca Direccional","PinHeader_1x08_P2.54mm_Vertical",7.406693,-4.296850,90.000000,top
+"J4","JP4 Botones Frontales","PinHeader_1x08_P2.54mm_Vertical",8.567228,-2.626283,0.000000,top
+"J5","JP5 Botones laterales","PinHeader_1x08_P2.54mm_Vertical",8.571228,-1.678283,0.000000,top
+"R2","10kΩ","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",8.037008,-3.717701,-90.000000,top
+"R3","10kΩ","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",7.598425,-3.716142,-90.000000,top
+"R4","10kΩ","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",7.374803,-3.716142,-90.000000,top
+"R5","10kΩ","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",7.801969,-3.716135,-90.000000,top
+"R6","4.7kΩ","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",7.490945,-2.153150,-90.000000,top
+"R7","4.7kΩ","R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",7.494094,-3.037402,90.000000,top
+"SW1","SW_SPDT","Untitled_1",2.221205,-2.727954,0.000000,top
+"SW2","SW_SPDT","Untitled_1",2.440465,-3.090472,0.000000,top
+"SW3","SW_SPDT","Untitled_1",2.646654,-3.456472,0.000000,top
+"SW4","SW_SPDT","Untitled_1",2.876465,-3.823622,0.000000,top
+"SW5","SW_SPDT","Untitled_1",3.011346,-2.722378,0.000000,top
+"SW6","SW_SPDT","Untitled_1",3.222921,-3.087626,0.000000,top
+"SW7","SW_SPDT","Untitled_1",3.435189,-3.446717,0.000000,top
+"SW8","SW_SPDT","Untitled_1",3.652881,-3.834626,0.000000,top
+"SW9","SW_SPDT","Untitled_1",4.306842,-3.249013,-60.000000,top
+"SW10","SW_SPDT","Untitled_1",4.763065,-3.257013,-60.000000,top
+"U1","~","ESP32_30pin",7.825000,-2.536355,180.000000,top
+"U2","LD1117S33TR_SOT223","SOT-223-3_TabPin2",6.921260,-2.417717,-90.000000,top
