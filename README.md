@@ -75,7 +75,7 @@ El sistema usa un ESP32 DevKit V1 como controlador principal. El mismo hardware 
 - Inventario de fuentes KiCad recibidas: [`hardware/kicad/SOURCES.md`](hardware/kicad/SOURCES.md)
 - Mapeo completo: [`data/ACT_Labs_Mapeo_Consolidado.xlsx`](data/ACT_Labs_Mapeo_Consolidado.xlsx)
 
-## Pines principales PS1 V2
+## Pines principales V2
 
 | Señal | GPIO |
 |---|---:|
@@ -84,8 +84,8 @@ El sistema usa un ESP32 DevKit V1 como controlador principal. El mismo hardware 
 | ATT | 5 |
 | CLK | 18 |
 | ACK | 4 |
-| START | 21 |
-| SELECT | 22 |
+| START | 2 |
+| SELECT | 16 |
 | AF_MODE | 15 |
 
 ## Próximos pasos
@@ -93,5 +93,5 @@ El sistema usa un ESP32 DevKit V1 como controlador principal. El mismo hardware 
 1. Validar continuidad entre PCB principal, placa AutoFire y conectores JP.
 2. Revisar la ruta de alimentación `BATT_FROM_TP`, TP4056, LD1117-3.3 y D1.
 3. Depurar ACK/DATA del protocolo PS1 con analizador lógico.
-4. Confirmar pull-ups de DATA/ACK a 4.7 kΩ según V2.
+4. Confirmar pull-ups reales contra la PCB antes de fabricar.
 5. Mantener BOM/POS exportados desde KiCad antes de fabricar.
