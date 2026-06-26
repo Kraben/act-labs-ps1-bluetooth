@@ -17,7 +17,14 @@ Documentación técnica consolidada para la conversión de un tablero ACT-LABS /
 │   ├── firmware.md
 │   ├── bom.md
 │   ├── fabricacion.md
-│   └── revision-v2.md
+│   ├── revision-v2.md
+│   └── interfaces/
+│       ├── architecture.md
+│       ├── ps1.md
+│       ├── snes.md
+│       ├── genesis.md
+│       ├── n64.md
+│       └── gamecube.md
 ├── hardware/
 │   ├── README.md
 │   ├── fabrication/
@@ -64,6 +71,19 @@ El sistema usa un ESP32 DevKit V1 como controlador principal. El mismo hardware 
 | BLE | Operativo |
 | PS1 | En depuración de ACK/DATA |
 | Alimentación | TP4056 externo, batería PS Vita 3.7 V, LD1117-3.3 y diodo Schottky |
+
+## Interfaces de consola
+
+La documentación de protocolos queda separada en `docs/interfaces/` para permitir futuras salidas cableadas sin mezclar PS1 con otros protocolos.
+
+| Interfaz | Archivo | Estado |
+|---|---|---|
+| Arquitectura común | [`docs/interfaces/architecture.md`](docs/interfaces/architecture.md) | Base común |
+| PS1 | [`docs/interfaces/ps1.md`](docs/interfaces/ps1.md) | En depuración ACK/DATA |
+| SNES | [`docs/interfaces/snes.md`](docs/interfaces/snes.md) | Futuro |
+| Genesis / Mega Drive | [`docs/interfaces/genesis.md`](docs/interfaces/genesis.md) | Futuro |
+| Nintendo 64 | [`docs/interfaces/n64.md`](docs/interfaces/n64.md) | Futuro |
+| GameCube | [`docs/interfaces/gamecube.md`](docs/interfaces/gamecube.md) | Futuro |
 
 ## Referencias rápidas
 
