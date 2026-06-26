@@ -2,6 +2,8 @@
 
 Mapa funcional actualizado desde `ACT_Labs_Mapeo_Consolidado(2).xlsx` y `gpio_mapping.csv`.
 
+Referencia externa usada como apoyo: Random Nerd Tutorials, `ESP32 Pinout Reference: Which GPIO pins should you use?`, agregada para validar restricciones generales de GPIO del ESP32.
+
 ## Botones frontales
 
 | # | Señal / función | GPIO ESP32 | JP / conector | Pin conector | Tipo | Pull-up | Notas |
@@ -33,24 +35,24 @@ Mapa funcional actualizado desde `ACT_Labs_Mapeo_Consolidado(2).xlsx` y `gpio_ma
 
 | # | Señal | GPIO ESP32 | Conector | Pin conector | Tipo | Pull-up | Notas |
 |---:|---|---|---|---|---|---|---|
-| 16 | START | GPIO2 | JP1 / START1 | 12 / - | INPUT | PULLUP interno + R6 15k | SW_Push_Dual |
+| 16 | START | GPIO2 | JP1 / START1 | 12 / - | INPUT | PULLUP interno + R6 15k | SW_Push_Dual; GPIO2 es pin de arranque y puede afectar boot si se fuerza en nivel incorrecto |
 | 17 | SELECT | GPIO16 | JP1 / SELECT1 | 12 / - | INPUT | PULLUP interno + R7 15k | SW_Push_Dual |
 
 ## Interfaz PS1 SPI
 
 | # | Señal | GPIO ESP32 | Conector | Pin | Tipo | Pull-up | Notas |
 |---:|---|---|---|---|---|---|---|
-| 19 | PS1_DATA / MISO | GPIO19 | PS1_Conn | 1 | OUTPUT | R1 1k a 3V3 | Mando a consola |
-| 20 | PS1_CMD / MOSI | GPIO23 | PS1_Conn | 2 | INPUT | - | Consola a mando |
-| 21 | PS1_ATT / CS | GPIO5 | PS1_Conn | 6 | INPUT | - | LOW = consola iniciando comunicación |
-| 22 | PS1_CLK | GPIO18 | PS1_Conn | 7 | INPUT | - | Reloj aprox 250kHz |
+| 19 | PS1_DATA / MISO | GPIO19 | PS1_Conn | 1 | OUTPUT | R1 1k a 3V3 | Mando a consola; coincide con MISO VSPI por defecto |
+| 20 | PS1_CMD / MOSI | GPIO23 | PS1_Conn | 2 | INPUT | - | Consola a mando; coincide con MOSI VSPI por defecto |
+| 21 | PS1_ATT / CS | GPIO5 | PS1_Conn | 6 | INPUT | - | LOW = consola iniciando comunicación; GPIO5 es strapping pin |
+| 22 | PS1_CLK | GPIO18 | PS1_Conn | 7 | INPUT | - | Reloj aprox 250kHz; coincide con CLK VSPI por defecto |
 | 23 | PS1_ACK | GPIO4 | PS1_Conn | 8 | OUTPUT | - | Pulso LOW aprox 2us |
 
 ## AutoFire / alimentación
 
 | # | Señal | GPIO ESP32 | JP | Pin | Tipo | Pull-up | Notas |
 |---:|---|---|---|---|---|---|---|
-| 25 | AF_MODE | GPIO15 | JP1 | 2 | INPUT | PULLUP interno | SW9 Placa_2 |
+| 25 | AF_MODE | GPIO15 | JP1 | 2 | INPUT | PULLUP interno | SW9 Placa_2; GPIO15 es strapping pin y puede emitir señal durante boot |
 | 26 | BATT_FROM_TP | VIN | JP1 | 12 | PWR | - | SW10 Placa_2 - Encendido modo BT |
 | 27 | VCC_3V3 | 3V3 | JP1 | 1 | PWR | - | Alimenta Placa_2 |
 | 28 | GND | GND | JP1 | 13 | GND | - | Referencia común |
@@ -68,6 +70,17 @@ static constexpr uint8_t PIN_START   = 2;
 static constexpr uint8_t PIN_SELECT  = 16;
 static constexpr uint8_t PIN_AF_MODE = 15;
 ```
+
+## Notas ESP32 pinout
+
+- GPIO34, GPIO35, GPIO36 y GPIO39 son solo entrada y no tienen pull-up/pull-down internos; por eso el D-Pad necesita resistencias externas.
+- GPIO6 a GPIO11 no deben usarse porque normalmente estan conectados a la memoria SPI flash interna del ESP32.
+- GPIO2, GPIO5, GPIO12 y GPIO15 son pines sensibles durante el arranque; evitar que botones o switches los fuercen a niveles no deseados al encender.
+- El mapeo PS1 usa GPIO23, GPIO19, GPIO18 y GPIO5, que coinciden con la asignacion VSPI habitual del ESP32: MOSI=23, MISO=19, CLK=18 y CS=5.
+
+## Referencias
+
+- Random Nerd Tutorials - ESP32 Pinout Reference: https://randomnerdtutorials.com/esp32-pinout-reference-gpios/
 
 ## Nota de revisión
 
