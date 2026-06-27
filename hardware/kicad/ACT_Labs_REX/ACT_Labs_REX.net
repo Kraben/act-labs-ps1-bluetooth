@@ -1,0 +1,5446 @@
+(export
+	(version "E")
+	(design
+		(source "/Users/kraben/Downloads/Arcade Lab Rex/ACT_Labs_REX.kicad_sch")
+		(date "2026-06-24T14:35:25")
+		(tool "Eeschema 10.0.3")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "ACT_Labs_REX.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "2")
+			(name "/AutoFire/")
+			(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "Placa_2.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "220µF")
+			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+			(description "Polarized capacitor")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "bf7886c2-e3c6-4c1e-880c-2a9ef66c71a4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "100nF")
+			(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "94c4b900-2023-42a1-a522-e0fb9381ab3b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "10µF")
+			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+			(description "Polarized capacitor")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "02861ba3-5284-4bea-bc9e-a6a627875d55")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "10µF")
+			(footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+			(description "Polarized capacitor")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Polarized")
+				(description "Polarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "CP_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "062521a6-156d-44fe-bc16-4aae32a2ff03")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "SS14")
+			(footprint "Diode_SMD:D_SMA")
+			(datasheet "https://www.vishay.com/docs/88746/ss12.pdf")
+			(description "40V 1A Schottky Diode, SMA")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Diode_SMD:D_SMA")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/88746/ss12.pdf")
+				(field
+					(name "Description") "40V 1A Schottky Diode, SMA")
+			)
+			(libsource
+				(lib "Diode")
+				(part "SS14")
+				(description "40V 1A Schottky Diode, SMA")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "D*SMA*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "785a39de-c00d-4369-bbe7-e989ff5e2770")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D3")
+			(value "SS14")
+			(footprint "Diode_SMD:D_SMA")
+			(datasheet "https://www.vishay.com/docs/88746/ss12.pdf")
+			(description "40V 1A Schottky Diode, SMA")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Diode_SMD:D_SMA")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/88746/ss12.pdf")
+				(field
+					(name "Description") "40V 1A Schottky Diode, SMA")
+			)
+			(libsource
+				(lib "Diode")
+				(part "SS14")
+				(description "40V 1A Schottky Diode, SMA")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "diode Schottky")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "D*SMA*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4f080c11-76a8-45b6-9f23-b97a26209dbc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "H1")
+			(value "TP4056")
+			(footprint "MountingHole:MountingHole_2.5mm_Pad")
+			(description "Mounting Hole with connection")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "MountingHole:MountingHole_2.5mm_Pad")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole with connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole_Pad")
+				(description "Mounting Hole with connection")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*Pad*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a7f0c30e-6376-4edc-8b54-340a001e2171")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "H2")
+			(value "TP4056")
+			(footprint "MountingHole:MountingHole_2.5mm_Pad")
+			(description "Mounting Hole with connection")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "MountingHole:MountingHole_2.5mm_Pad")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole with connection")
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole_Pad")
+				(description "Mounting Hole with connection")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*Pad*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1f4aa72a-42ca-48bf-9763-305c11194cb3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "PS1_Connector1")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x09")
+				(description "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8dfd8b68-4611-4cf7-98d1-17787daf047d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "JP1 Autofire")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x13")
+				(description "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b5a9a5d4-7231-412f-b0e6-3dce65a0b600")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "JP3 Palanca Direccional")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x08")
+				(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "34b978fd-1c46-42c7-9c75-6b649e923d78")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "JP4 Botones Frontales")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x08")
+				(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5bf8b0db-cc4e-4ca3-a98b-ae822f2defda")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J5")
+			(value "JP5 Botones laterales")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x08")
+				(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f8ad344d-173c-44f6-a40f-9292951dd359")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP1")
+			(value "SolderJumper_2_Open")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7ef5a4fb-bd90-4261-903f-1369e62e50e4")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP2")
+			(value "SolderJumper_2_Open")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "bc347ab1-2a87-4084-8b04-146a4138caf8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "JP3")
+			(value "SolderJumper_2_Open")
+			(footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+			(description "Solder Jumper, 2-pole, open")
+			(fields
+				(field
+					(name "Footprint") "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(libsource
+				(lib "Jumper")
+				(part "SolderJumper_2_Open")
+				(description "Solder Jumper, 2-pole, open")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "solder jumper SPST")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SolderJumper*Open*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c7d9ebfa-1dc8-49db-8a84-c74fc9be51af")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "10kΩ")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ea78e309-9364-4ac3-85eb-84a43d52b488")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "10kΩ")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c75f0bc8-21c4-4cd3-a6af-2684c1cdd49e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "10kΩ")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "938f04d0-4ecb-4e34-95f4-935321814b68")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "10kΩ")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9abd530d-fc65-4e66-854b-7e4a7beda027")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "10kΩ")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a9415920-9d5e-4551-965e-d270f91f5c42")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "4.7kΩ")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "bac95e11-e897-425b-a106-39335a4711b3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "4.7kΩ")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e8840c80-7583-4d7a-84f2-2f58cb8c4466")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Select1")
+			(value "SW_Omron_B3FS")
+			(footprint "Button_Switch_THT:SW_SPST_Omron_B3F-50xx")
+			(datasheet "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
+			(description "Omron B3FS 6x6mm single pole normally-open tactile switch")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:SW_SPST_Omron_B3F-50xx")
+				(field
+					(name "Datasheet") "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
+				(field
+					(name "Description") "Omron B3FS 6x6mm single pole normally-open tactile switch")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_Omron_B3FS")
+				(description "Omron B3FS 6x6mm single pole normally-open tactile switch")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch normally-open pushbutton push-button")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SW*Omron*B3FS*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "346933ed-f147-41b0-b5fb-9b37e63aa343")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Start1")
+			(value "SW_Omron_B3FS")
+			(footprint "Button_Switch_THT:SW_SPST_Omron_B3F-50xx")
+			(datasheet "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
+			(description "Omron B3FS 6x6mm single pole normally-open tactile switch")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:SW_SPST_Omron_B3F-50xx")
+				(field
+					(name "Datasheet") "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
+				(field
+					(name "Description") "Omron B3FS 6x6mm single pole normally-open tactile switch")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_Omron_B3FS")
+				(description "Omron B3FS 6x6mm single pole normally-open tactile switch")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch normally-open pushbutton push-button")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SW*Omron*B3FS*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fe862121-1838-484c-9858-8fafc0a03612")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "~")
+			(footprint "ESP32_Footprints:ESP32_30pin")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "ESP32_Footprints:ESP32_30pin")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "esp32_30pin_revised")
+				(part "ESP32_30Pin")
+				(description "")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e07cea4a-7ebc-428a-aad7-8e053a1a40ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "30")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "29")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "28")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "27")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "26")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "25")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "LD1117S33TR_SOT223")
+			(footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
+			(datasheet "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf")
+			(description "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223")
+			(fields
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
+				(field
+					(name "Datasheet") "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf")
+				(field
+					(name "Description") "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223")
+			)
+			(libsource
+				(lib "Regulator_Linear")
+				(part "LD1117S33TR_SOT223")
+				(description "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223")
+			)
+			(property
+				(name "Sheetname")
+				(value "")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ACT_Labs_REX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "REGULATOR LDO 3.3V")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "SOT?223*TabPin2*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "951f9161-98d1-4853-a7d1-bd624a9368d1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "LED")
+			(footprint "LED_THT:LED_D3.0mm")
+			(description "Light emitting diode")
+			(fields
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "LED_THT:LED_D3.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "a2d0ff48-caf2-4680-a93c-ce8be3ca2393")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J6")
+			(value "JP6 Autofire")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x13")
+				(description "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "4cdefc61-a587-482c-b5bd-2e8f25cfc3ae")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "220Ω")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "39f6d5d1-6c88-4feb-9ce5-2fe1af4ef677")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "611c687c-5488-4538-acb0-97973e85734f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW2")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "af8afb33-48ee-4fa0-837d-f4886ed5faf8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW3")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "5f147e0b-e4d3-41a3-bbc7-1e3ea22c5501")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW4")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "f2ae9149-7903-4e96-bc49-fcb1e2cfc459")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW5")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "8b771723-025e-4729-9f78-ac9bb7de7ba5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW6")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "f65748fe-d1d4-4ec5-84ca-4e93d8376f30")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW7")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "405c5b61-57ea-4040-a894-7b5acc913e2f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW8")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "da2a0b78-2c9a-4a6f-a829-b58611c167b2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW9")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "b8db419f-2741-43ea-b038-9bef24325bb3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW10")
+			(value "SW_SPDT")
+			(footprint "Button_Switch_THT:Untitled_1")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "KiLib_Generator")
+				)
+				(field
+					(name "Sim.Device")
+				)
+				(field
+					(name "Sim.Library")
+				)
+				(field
+					(name "Sim.Type")
+				)
+				(field
+					(name "Footprint") "Button_Switch_THT:Untitled_1")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "")
+			)
+			(property
+				(name "Sim.Device")
+				(value "")
+			)
+			(property
+				(name "Sim.Library")
+				(value "")
+			)
+			(property
+				(name "Sim.Type")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AutoFire")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Placa_2.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/AutoFire/")
+				(tstamps "/16ee626a-010a-4512-8d67-cf2656695cde/")
+			)
+			(tstamps "428c0c2b-8164-446e-a41e-980e51ffffbe")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups
+		(group
+			(name "AutoFire")
+			(uuid "d31322d4-ca1c-4cec-b420-762f11e7314b")
+			(lib_id "")
+			(members
+				(member
+					(uuid "f65748fe-d1d4-4ec5-84ca-4e93d8376f30")
+				)
+				(member
+					(uuid "f2ae9149-7903-4e96-bc49-fcb1e2cfc459")
+				)
+				(member
+					(uuid "428c0c2b-8164-446e-a41e-980e51ffffbe")
+				)
+				(member
+					(uuid "5f147e0b-e4d3-41a3-bbc7-1e3ea22c5501")
+				)
+				(member
+					(uuid "611c687c-5488-4538-acb0-97973e85734f")
+				)
+				(member
+					(uuid "af8afb33-48ee-4fa0-837d-f4886ed5faf8")
+				)
+				(member
+					(uuid "a2d0ff48-caf2-4680-a93c-ce8be3ca2393")
+				)
+				(member
+					(uuid "8b771723-025e-4729-9f78-ac9bb7de7ba5")
+				)
+				(member
+					(uuid "da2a0b78-2c9a-4a6f-a829-b58611c167b2")
+				)
+				(member
+					(uuid "b8db419f-2741-43ea-b038-9bef24325bb3")
+				)
+				(member
+					(uuid "39f6d5d1-6c88-4feb-9ce5-2fe1af4ef677")
+				)
+				(member
+					(uuid "405c5b61-57ea-4040-a894-7b5acc913e2f")
+				)
+				(member
+					(uuid "4cdefc61-a587-482c-b5bd-2e8f25cfc3ae")
+				)
+			)
+		)
+	)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x08")
+			(description "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x08")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "Pin_6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "Pin_7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "Pin_8")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x09")
+			(description "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x09")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "Pin_6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "Pin_7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "Pin_8")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "Pin_9")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x13")
+			(description "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x13")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "Pin_6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "Pin_7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "Pin_8")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "Pin_9")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "Pin_10")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "Pin_11")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "Pin_12")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "Pin_13")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C_Polarized")
+			(description "Polarized capacitor")
+			(footprints
+				(fp "CP_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C_Polarized")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Polarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "LED")
+			(description "Light emitting diode")
+			(footprints
+				(fp "LED*")
+				(fp "LED_SMD:*")
+				(fp "LED_THT:*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "LED")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Diode")
+			(part "SS14")
+			(description "40V 1A Schottky Diode, SMA")
+			(docs "https://www.vishay.com/docs/88746/ss12.pdf")
+			(footprints
+				(fp "D*SMA*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "SS14")
+				(field
+					(name "Footprint") "Diode_SMD:D_SMA")
+				(field
+					(name "Datasheet") "https://www.vishay.com/docs/88746/ss12.pdf")
+				(field
+					(name "Description") "40V 1A Schottky Diode, SMA")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Jumper")
+			(part "SolderJumper_2_Open")
+			(description "Solder Jumper, 2-pole, open")
+			(footprints
+				(fp "SolderJumper*Open*")
+			)
+			(fields
+				(field
+					(name "Reference") "JP")
+				(field
+					(name "Value") "SolderJumper_2_Open")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Solder Jumper, 2-pole, open")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Mechanical")
+			(part "MountingHole_Pad")
+			(description "Mounting Hole with connection")
+			(footprints
+				(fp "MountingHole*Pad*")
+			)
+			(fields
+				(field
+					(name "Reference") "H")
+				(field
+					(name "Value") "MountingHole_Pad")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole with connection")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "Regulator_Linear")
+			(part "LD1117S33TR_SOT223")
+			(description "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223")
+			(docs "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf")
+			(footprints
+				(fp "SOT?223*TabPin2*")
+			)
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "LD1117S33TR_SOT223")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
+				(field
+					(name "Datasheet") "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf")
+				(field
+					(name "Description") "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "VO")
+					(type "power_out")
+				)
+				(pin
+					(num "3")
+					(name "VI")
+					(type "power_in")
+				)
+			)
+		)
+		(libpart
+			(lib "Switch")
+			(part "SW_Omron_B3FS")
+			(description "Omron B3FS 6x6mm single pole normally-open tactile switch")
+			(docs "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
+			(footprints
+				(fp "SW*Omron*B3FS*")
+			)
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "SW_Omron_B3FS")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet") "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
+				(field
+					(name "Description") "Omron B3FS 6x6mm single pole normally-open tactile switch")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Switch")
+			(part "SW_SPDT")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "SW_SPDT")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "C")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "esp32_30pin_revised")
+			(part "ESP32_30Pin")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value")
+				)
+				(field
+					(name "Footprint") "ESP32_30pin")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VIN")
+					(type "power_out")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "bidirectional")
+				)
+				(pin
+					(num "3")
+					(name "GPIO13")
+					(type "bidirectional")
+				)
+				(pin
+					(num "4")
+					(name "GPIO12")
+					(type "bidirectional")
+				)
+				(pin
+					(num "5")
+					(name "GPIO14")
+					(type "bidirectional")
+				)
+				(pin
+					(num "6")
+					(name "GPIO27")
+					(type "bidirectional")
+				)
+				(pin
+					(num "7")
+					(name "GPIO26")
+					(type "bidirectional")
+				)
+				(pin
+					(num "8")
+					(name "GPIO25")
+					(type "bidirectional")
+				)
+				(pin
+					(num "9")
+					(name "GPIO33")
+					(type "bidirectional")
+				)
+				(pin
+					(num "10")
+					(name "GPIO32")
+					(type "bidirectional")
+				)
+				(pin
+					(num "11")
+					(name "GPIO35")
+					(type "bidirectional")
+				)
+				(pin
+					(num "12")
+					(name "GPIO34")
+					(type "bidirectional")
+				)
+				(pin
+					(num "13")
+					(name "GPIO39")
+					(type "bidirectional")
+				)
+				(pin
+					(num "14")
+					(name "GPIO36")
+					(type "bidirectional")
+				)
+				(pin
+					(num "15")
+					(name "EN")
+					(type "bidirectional")
+				)
+				(pin
+					(num "16")
+					(name "3.3v")
+					(type "output")
+				)
+				(pin
+					(num "17")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "18")
+					(name "GPIO15")
+					(type "bidirectional")
+				)
+				(pin
+					(num "19")
+					(name "GPIO2")
+					(type "bidirectional")
+				)
+				(pin
+					(num "20")
+					(name "GPIO4")
+					(type "bidirectional")
+				)
+				(pin
+					(num "21")
+					(name "GPIO16")
+					(type "bidirectional")
+				)
+				(pin
+					(num "22")
+					(name "GPIO17")
+					(type "bidirectional")
+				)
+				(pin
+					(num "23")
+					(name "GPIO5")
+					(type "bidirectional")
+				)
+				(pin
+					(num "24")
+					(name "GPIO18")
+					(type "bidirectional")
+				)
+				(pin
+					(num "25")
+					(name "GPIO19")
+					(type "bidirectional")
+				)
+				(pin
+					(num "26")
+					(name "GPIO21")
+					(type "bidirectional")
+				)
+				(pin
+					(num "27")
+					(name "GPIO3")
+					(type "bidirectional")
+				)
+				(pin
+					(num "28")
+					(name "GPIO1")
+					(type "bidirectional")
+				)
+				(pin
+					(num "29")
+					(name "GPIO22")
+					(type "bidirectional")
+				)
+				(pin
+					(num "30")
+					(name "GPIO23")
+					(type "bidirectional")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector_Generic")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "Diode")
+			(uri "${KICAD10_SYMBOL_DIR}/Diode.kicad_sym")
+		)
+		(library
+			(logical "Jumper")
+			(uri "${KICAD10_SYMBOL_DIR}/Jumper.kicad_sym")
+		)
+		(library
+			(logical "Mechanical")
+			(uri "${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym")
+		)
+		(library
+			(logical "Regulator_Linear")
+			(uri "${KICAD10_SYMBOL_DIR}/Regulator_Linear.kicad_sym")
+		)
+		(library
+			(logical "Switch")
+			(uri "${KICAD10_SYMBOL_DIR}/Switch.kicad_sym")
+		)
+		(library
+			(logical "esp32_30pin_revised")
+			(uri "/Users/kraben/Downloads/Simbolos KiCad/esp32_30pin_revised.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/AF_CIRCULO")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "10")
+				(pinfunction "Pin_10_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pinfunction "GPIO26_7")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "2")
+			(name "/AF_CRUZ")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "9")
+				(pinfunction "Pin_9_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "GPIO25_8")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "3")
+			(name "/AF_CUADRADO")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "7")
+				(pinfunction "Pin_7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "GPIO12_4")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "4")
+			(name "/AF_L1")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "7")
+				(pinfunction "Pin_7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "GPIO27_6")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "5")
+			(name "/AF_L2")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "11")
+				(pinfunction "Pin_11_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "10")
+				(pinfunction "GPIO32_10")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "6")
+			(name "/AF_MODE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "18")
+				(pinfunction "GPIO15_18")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "7")
+			(name "/AF_R1")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "GPIO33_9")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "8")
+			(name "/AF_R2")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "7")
+				(pinfunction "Pin_7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "GPIO13_3")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "9")
+			(name "/AF_TRIANGULO")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "GPIO14_5")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "10")
+			(name "/AutoFire/AF_CIRCULO")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "10")
+				(pinfunction "Pin_10_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "/AutoFire/AF_CRUZ")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "9")
+				(pinfunction "Pin_9_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "/AutoFire/AF_CUADRADO")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW6")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "/AutoFire/AF_L1")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "7")
+				(pinfunction "Pin_7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "/AutoFire/AF_L2")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "11")
+				(pinfunction "Pin_11_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "/AutoFire/AF_MODE")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW9")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "/AutoFire/AF_R1")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "/AutoFire/AF_R2")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW8")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "/AutoFire/AF_TRIANGULO")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW7")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "/AutoFire/GND")
+			(class "Default")
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "13")
+				(pinfunction "Pin_13_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW10")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW6")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW7")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW8")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW9")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "/AutoFire/LED")
+			(class "Default")
+			(node
+				(ref "D2")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "/GND")
+			(class "GND,Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "H2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "J1")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "13")
+				(pinfunction "Pin_13_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP2")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP3")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Select1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Start1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "17")
+				(pinfunction "GND_17")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "GND_1")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "22")
+			(name "/JP3_ABAJO")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "11")
+				(pinfunction "GPIO35_11")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "23")
+			(name "/JP3_ARRIBA")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "7")
+				(pinfunction "Pin_7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "GPIO36_14")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "24")
+			(name "/JP3_DERECHA")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "13")
+				(pinfunction "GPIO39_13")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "25")
+			(name "/JP3_IZQUIERDA")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "GPIO34_12")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "26")
+			(name "/PS1_ACK")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "9")
+				(pinfunction "Pin_9_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "22")
+				(pinfunction "GPIO17_22")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "27")
+			(name "/PS1_ATT")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "24")
+				(pinfunction "GPIO18_24")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "28")
+			(name "/PS1_CLK")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "7")
+				(pinfunction "Pin_7_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "23")
+				(pinfunction "GPIO5_23")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "29")
+			(name "/PS1_CMD")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "21")
+				(pinfunction "GPIO16_21")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "30")
+			(name "/PS1_DATA")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "25")
+				(pinfunction "GPIO19_25")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "31")
+			(name "/SELECT")
+			(class "Default")
+			(node
+				(ref "JP3")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Select1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "29")
+				(pinfunction "GPIO22_29")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "32")
+			(name "/START")
+			(class "Default")
+			(node
+				(ref "JP2")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Start1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "26")
+				(pinfunction "GPIO21_26")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "33")
+			(name "/VIB_NC")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "34")
+			(name "BATT_FROM_TP")
+			(class "Default")
+			(node
+				(ref "C3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "H1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "J2")
+				(pin "12")
+				(pinfunction "Pin_12_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "12")
+				(pinfunction "Pin_12_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW10")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "VI_3")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "35")
+			(name "PS1_PIN5")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "JP1")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "36")
+			(name "VCC_3V3")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D3")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D3")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J6")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R5")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW10")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "16")
+				(pinfunction "3.3v_16")
+				(pintype "output")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "VO_2")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "37")
+			(name "unconnected-(J1-Pin_8-Pad8)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "38")
+			(name "unconnected-(J2-Pin_3-Pad3)")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "39")
+			(name "unconnected-(J6-Pin_3-Pad3)")
+			(class "Default")
+			(node
+				(ref "J6")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "40")
+			(name "unconnected-(SW1-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW1")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "41")
+			(name "unconnected-(SW2-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW2")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "42")
+			(name "unconnected-(SW3-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW3")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "43")
+			(name "unconnected-(SW4-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW4")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "44")
+			(name "unconnected-(SW5-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW5")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "45")
+			(name "unconnected-(SW6-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW6")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "46")
+			(name "unconnected-(SW7-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW7")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "47")
+			(name "unconnected-(SW8-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW8")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "48")
+			(name "unconnected-(SW9-C-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW9")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "49")
+			(name "unconnected-(U1-EN-Pad15)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "15")
+				(pinfunction "EN_15")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "50")
+			(name "unconnected-(U1-GPIO1-Pad28)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "28")
+				(pinfunction "GPIO1_28")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "51")
+			(name "unconnected-(U1-GPIO2-Pad19)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "19")
+				(pinfunction "GPIO2_19")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "52")
+			(name "unconnected-(U1-GPIO3-Pad27)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "27")
+				(pinfunction "GPIO3_27")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "53")
+			(name "unconnected-(U1-GPIO4-Pad20)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "20")
+				(pinfunction "GPIO4_20")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "54")
+			(name "unconnected-(U1-GPIO23-Pad30)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "30")
+				(pinfunction "GPIO23_30")
+				(pintype "bidirectional+no_connect")
+			)
+		)
+		(net
+			(code "55")
+			(name "unconnected-(U1-VIN-Pad1)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "VIN_1")
+				(pintype "power_out+no_connect")
+			)
+		)
+	)
+)

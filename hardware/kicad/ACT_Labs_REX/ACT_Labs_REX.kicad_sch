@@ -3683,6 +3683,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 87.63) (xy 243.84 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b86a7e04-0dcd-4741-89de-9164a68effc2")
+	)
+	(wire
+		(pts
 			(xy 260.35 41.91) (xy 260.35 43.18)
 		)
 		(stroke
@@ -3703,16 +3713,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 114.3) (xy 256.54 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d66a0bbd-9b9b-487b-bbf3-f07e4ebf60d8")
-	)
-	(wire
-		(pts
 			(xy 34.29 54.61) (xy 35.56 54.61)
 		)
 		(stroke
@@ -3720,16 +3720,6 @@
 			(type default)
 		)
 		(uuid "db601fb1-69d6-4b8b-979d-b95bcf7be411")
-	)
-	(wire
-		(pts
-			(xy 236.22 86.36) (xy 247.65 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecfe44ef-d1b2-4564-af8b-2ce37630213b")
 	)
 	(wire
 		(pts
@@ -3842,7 +3832,7 @@
 		(uuid "15343b5b-7139-4bda-af69-78f51af539a0")
 	)
 	(label "GND"
-		(at 242.57 114.3 0)
+		(at 252.73 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4092,12 +4082,12 @@
 		(uuid "6b3590da-5cd0-4d9b-993c-0b6679062525")
 	)
 	(label "GND"
-		(at 255.27 140.97 180)
+		(at 252.73 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "6f522d79-4ec5-4da7-b854-7de7dd4c43ce")
 	)
@@ -4314,16 +4304,6 @@
 		)
 		(uuid "b65a1d98-20cc-4a91-85c2-76b77877e39b")
 	)
-	(label "REG_OUT"
-		(at 236.22 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b8ca4247-a851-4ba2-bbc9-0fc42033d52d")
-	)
 	(label "JP3_DERECHA"
 		(at 35.56 62.23 180)
 		(effects
@@ -4499,17 +4479,17 @@
 		(uuid "ddd09f98-2fe4-4ec8-8316-7ae231a3879f")
 	)
 	(label "GND"
-		(at 255.27 78.74 180)
+		(at 236.22 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "e077aa21-f9ef-4df7-a131-9763fd3b93b6")
 	)
 	(label "GND"
-		(at 256.54 114.3 0)
+		(at 220.98 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4529,7 +4509,7 @@
 		(uuid "e5b9c3b1-6c2e-40df-bef0-a783002425e3")
 	)
 	(label "GND"
-		(at 242.57 140.97 180)
+		(at 203.2 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4620,17 +4600,17 @@
 	)
 	(global_label "VCC_3V3"
 		(shape input)
-		(at 255.27 133.35 90)
+		(at 245.11 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "0038444b-957a-4de9-9418-76ead1eb139b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.27 122.261 90)
+			(at 234.021 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4638,13 +4618,13 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
 	(global_label "BATT_FROM_TP"
 		(shape input)
-		(at 242.57 133.35 90)
+		(at 210.82 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4654,7 +4634,7 @@
 		)
 		(uuid "296072a0-6722-406f-af81-543166c9a923")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.57 116.7577 90)
+			(at 227.4123 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4692,17 +4672,17 @@
 	)
 	(global_label "VCC_3V3"
 		(shape input)
-		(at 242.57 106.68 90)
+		(at 245.11 114.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "3ae91096-2e37-4ace-a990-5d712dda5fd8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.57 95.591 90)
+			(at 234.021 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4710,7 +4690,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -4764,55 +4744,7 @@
 	)
 	(global_label "VCC_3V3"
 		(shape passive)
-		(at 247.65 86.36 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "534e2e62-3c0a-4e8d-a1c9-e1dcce88d99b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.65 76.3823 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "BATT_FROM_TP"
-		(shape input)
-		(at 262.89 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5c8bf7b2-8214-4b25-be06-5ffbc1efe501")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 279.4823 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "VCC_3V3"
-		(shape passive)
-		(at 228.6 86.36 180)
+		(at 243.84 87.63 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4820,9 +4752,9 @@
 			)
 			(justify right)
 		)
-		(uuid "727eb115-c8d8-4cdf-aba3-1652ce57cb61")
+		(uuid "534e2e62-3c0a-4e8d-a1c9-e1dcce88d99b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.6223 86.36 0)
+			(at 243.84 97.6077 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4831,6 +4763,54 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "BATT_FROM_TP"
+		(shape input)
+		(at 228.6 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c8bf7b2-8214-4b25-be06-5ffbc1efe501")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 212.0077 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VCC_3V3"
+		(shape passive)
+		(at 256.54 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "727eb115-c8d8-4cdf-aba3-1652ce57cb61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 266.5177 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -5004,31 +4984,7 @@
 	)
 	(global_label "PS1_PIN5"
 		(shape input)
-		(at 229.87 114.3 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cd219a61-b06d-4363-8154-b459ad39253c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 126.3566 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "VCC_3V3"
-		(shape input)
-		(at 255.27 106.68 90)
+		(at 270.51 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5036,9 +4992,9 @@
 			)
 			(justify left)
 		)
-		(uuid "d308fb9a-06d2-4c7f-8646-02ba2af4e18b")
+		(uuid "cd219a61-b06d-4363-8154-b459ad39253c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.27 95.591 90)
+			(at 282.5666 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5047,6 +5003,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "VCC_3V3"
+		(shape input)
+		(at 213.36 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d308fb9a-06d2-4c7f-8646-02ba2af4e18b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.271 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -5100,17 +5080,17 @@
 	)
 	(global_label "VCC_3V3"
 		(shape input)
-		(at 229.87 106.68 90)
+		(at 262.89 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f09a8d49-af74-426d-98ab-f370da8cee88")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 95.591 90)
+			(at 251.801 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5118,13 +5098,13 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 242.57 137.16 0)
+		(at 207.01 99.06 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5134,7 +5114,7 @@
 		(dnp no)
 		(uuid "02861ba3-5284-4bea-bc9e-a6a627875d55")
 		(property "Reference" "C3"
-			(at 243.205 134.62 0)
+			(at 209.296 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5145,7 +5125,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 244.856 142.24 0)
+			(at 205.994 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5156,7 +5136,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 243.5352 140.97 0)
+			(at 203.2 100.0252 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5167,7 +5147,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 242.57 137.16 0)
+			(at 207.01 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5178,7 +5158,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 242.57 137.16 0)
+			(at 207.01 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5205,7 +5185,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 255.27 137.16 0)
+		(at 248.92 105.41 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5215,7 +5195,7 @@
 		(dnp no)
 		(uuid "062521a6-156d-44fe-bc16-4aae32a2ff03")
 		(property "Reference" "C4"
-			(at 255.905 134.62 0)
+			(at 240.284 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5226,7 +5206,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 257.556 142.24 0)
+			(at 251.714 100.076 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5237,7 +5217,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 256.2352 140.97 0)
+			(at 252.73 104.4448 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5248,7 +5228,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 137.16 0)
+			(at 248.92 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5259,7 +5239,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 255.27 137.16 0)
+			(at 248.92 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5676,7 +5656,7 @@
 	)
 	(symbol
 		(lib_id "Diode:SS14")
-		(at 232.41 86.36 0)
+		(at 252.73 87.63 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5687,7 +5667,7 @@
 		(fields_autoplaced yes)
 		(uuid "4f080c11-76a8-45b6-9f23-b97a26209dbc")
 		(property "Reference" "D3"
-			(at 232.0925 80.01 0)
+			(at 253.0475 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5697,7 +5677,7 @@
 			)
 		)
 		(property "Value" "SS14"
-			(at 232.0925 82.55 0)
+			(at 253.0475 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5707,7 +5687,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 232.41 90.805 0)
+			(at 252.73 83.185 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5718,7 +5698,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
-			(at 232.41 86.36 0)
+			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5729,7 +5709,7 @@
 			)
 		)
 		(property "Description" "40V 1A Schottky Diode, SMA"
-			(at 232.41 86.36 0)
+			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5740,7 +5720,7 @@
 			)
 		)
 		(property "KiLib_Generator" ""
-			(at 232.41 86.36 0)
+			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5751,7 +5731,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 232.41 86.36 0)
+			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5762,7 +5742,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 232.41 86.36 0)
+			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5773,7 +5753,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 232.41 86.36 0)
+			(at 252.73 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5975,7 +5955,7 @@
 	)
 	(symbol
 		(lib_id "Diode:SS14")
-		(at 229.87 110.49 270)
+		(at 266.7 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5986,7 +5966,7 @@
 		(fields_autoplaced yes)
 		(uuid "785a39de-c00d-4369-bbe7-e989ff5e2770")
 		(property "Reference" "D1"
-			(at 232.41 108.9024 90)
+			(at 265.1124 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5997,7 +5977,7 @@
 			)
 		)
 		(property "Value" "SS14"
-			(at 232.41 111.4424 90)
+			(at 267.6524 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6008,7 +5988,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 225.425 110.49 0)
+			(at 266.7 113.665 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6019,7 +5999,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
-			(at 229.87 110.49 0)
+			(at 266.7 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6030,7 +6010,7 @@
 			)
 		)
 		(property "Description" "40V 1A Schottky Diode, SMA"
-			(at 229.87 110.49 0)
+			(at 266.7 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6041,7 +6021,7 @@
 			)
 		)
 		(property "KiLib_Generator" ""
-			(at 229.87 110.49 0)
+			(at 266.7 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6052,7 +6032,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 229.87 110.49 0)
+			(at 266.7 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6063,7 +6043,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 229.87 110.49 0)
+			(at 266.7 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6074,7 +6054,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 229.87 110.49 0)
+			(at 266.7 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6456,7 +6436,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 255.27 110.49 0)
+		(at 217.17 110.49 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6464,10 +6444,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "94c4b900-2023-42a1-a522-e0fb9381ab3b")
 		(property "Reference" "C2"
-			(at 259.08 109.2199 0)
+			(at 208.534 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6478,7 +6457,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 259.08 111.7599 0)
+			(at 218.694 106.934 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6489,7 +6468,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
-			(at 256.2352 114.3 0)
+			(at 220.98 109.5248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6500,7 +6479,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 110.49 0)
+			(at 217.17 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6511,7 +6490,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 255.27 110.49 0)
+			(at 217.17 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6522,7 +6501,7 @@
 			)
 		)
 		(property "KiLib_Generator" ""
-			(at 255.27 110.49 0)
+			(at 217.17 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6533,7 +6512,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 255.27 110.49 0)
+			(at 217.17 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6544,7 +6523,7 @@
 			)
 		)
 		(property "Sim.Library" ""
-			(at 255.27 110.49 0)
+			(at 217.17 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6555,7 +6534,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 255.27 110.49 0)
+			(at 217.17 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6582,7 +6561,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:LD1117S33TR_SOT223")
-		(at 255.27 86.36 180)
+		(at 236.22 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6593,7 +6572,7 @@
 		(fields_autoplaced yes)
 		(uuid "951f9161-98d1-4853-a7d1-bd624a9368d1")
 		(property "Reference" "U2"
-			(at 255.27 90.17 0)
+			(at 236.22 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6603,7 +6582,7 @@
 			)
 		)
 		(property "Value" "LD1117S33TR_SOT223"
-			(at 255.27 92.71 0)
+			(at 236.22 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6613,7 +6592,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 255.27 91.44 0)
+			(at 236.22 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6624,7 +6603,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf"
-			(at 252.73 80.01 0)
+			(at 238.76 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6635,7 +6614,7 @@
 			)
 		)
 		(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
-			(at 255.27 86.36 0)
+			(at 236.22 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7402,7 +7381,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 242.57 110.49 0)
+		(at 248.92 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7412,7 +7391,7 @@
 		(dnp no)
 		(uuid "bf7886c2-e3c6-4c1e-880c-2a9ef66c71a4")
 		(property "Reference" "C1"
-			(at 243.205 107.95 0)
+			(at 240.03 111.506 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7423,7 +7402,7 @@
 			)
 		)
 		(property "Value" "220µF"
-			(at 244.856 115.57 0)
+			(at 250.444 109.982 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7434,7 +7413,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 243.5352 114.3 0)
+			(at 252.73 113.3348 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7445,7 +7424,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 242.57 110.49 0)
+			(at 248.92 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7456,7 +7435,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 242.57 110.49 0)
+			(at 248.92 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

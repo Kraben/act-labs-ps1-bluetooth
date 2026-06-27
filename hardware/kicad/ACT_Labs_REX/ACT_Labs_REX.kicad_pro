@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.9,
-          "height": 1.6,
-          "width": 1.6
+          "drill": 1.2,
+          "height": 1.7,
+          "width": 2.9
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -564,6 +564,10 @@
       {
         "netclass": "GND",
         "pattern": "/AutoFire/GND"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "//GND"
       }
     ]
   },
@@ -743,9 +747,14 @@
         "filename": "ACT_Labs_REX.kicad_sch",
         "name": "",
         "uuid": "629a39ee-48f1-43f5-b087-c92e6b78f3b4"
+      },
+      {
+        "filename": "tp4056.kicad_sch",
+        "name": "Battery_Management",
+        "uuid": "03f7ff60-0d66-4939-b0a0-f7992472ef9f"
       }
     ],
-    "used_designators": "D3,JP1-3",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -756,6 +765,10 @@
     [
       "16ee626a-010a-4512-8d67-cf2656695cde",
       "AutoFire"
+    ],
+    [
+      "03f7ff60-0d66-4939-b0a0-f7992472ef9f",
+      "Battery_Management"
     ]
   ],
   "text_variables": {},
