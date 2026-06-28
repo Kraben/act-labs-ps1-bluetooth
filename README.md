@@ -12,7 +12,7 @@ La landing page inicial esta en:
 
 [`docs/index.html`](docs/index.html)
 
-Cuando GitHub Pages este activo desde la carpeta `docs/`, el sitio se podra publicar como:
+Sitio se podra Web:
 
 ```text
 https://kraben.github.io/act-labs-ps1-bluetooth/
