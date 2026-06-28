@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ACT Labs REX PS1 Replacement PCB</title>
-  <meta name="description" content="Placa de repuesto open-source para el ACT Labs REX Arcade Stick de PS1." />
-  <link rel="icon" href="./assets/logo/krabenstick-logo.png" type="image/png" />
+  <meta name="description" content="Placa de repuesto open-source para preservar y reparar el ACT Labs REX Arcade Stick de PS1." />
+  <link rel="icon" href="./logo/krabenstick-logo.png" type="image/png" />
   <link rel="stylesheet" href="./site.css" />
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="ACT Labs REX PS1 Replacement PCB">
-      <img class="brand-logo" src="./assets/logo/krabenstick-logo.png" alt="" />
+      <img class="brand-logo" src="./logo/krabenstick-logo.png" alt="" />
       <span>ACT Labs REX PS1</span>
     </a>
     <nav>
@@ -25,12 +25,13 @@
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <img class="hero-logo" src="./assets/logo/krabenstick-logo.svg" alt="ACT Labs REX PS1 Replacement PCB" />
+        <img class="hero-logo" src="./logo/krabenstick-logo.png" alt="ACT Labs REX PS1 Replacement PCB" />
         <p class="eyebrow">Replacement PCB for ACT Labs REX Arcade Stick</p>
         <h1>ACT Labs REX PS1 Replacement PCB</h1>
         <p class="hero-text">
-          Hardware y firmware open-source para documentar, reparar y fabricar una placa de repuesto
-          para el ACT Labs REX Arcade Stick de PS1.
+          Repositorio público para preservar, documentar y fabricar una placa de repuesto para el
+          ACT Labs REX Arcade Stick de PS1. Este proyecto queda enfocado exclusivamente en reparación
+          y preservación de hardware existente.
         </p>
         <div class="actions">
           <a class="button primary" href="../README.md">Ver proyecto</a>
@@ -39,33 +40,33 @@
       </div>
       <div class="hero-card" aria-label="Estado del proyecto">
         <div class="glow"></div>
-        <img class="card-logo" src="./assets/logo/krabenstick-logo.png" alt="" />
+        <img class="card-logo" src="./logo/krabenstick-logo.png" alt="" />
         <h2>Estado actual</h2>
-        <p>Base actual: ESP32 DevKit V1</p>
+        <p>Placa de reemplazo para ACT Labs REX PS1</p>
         <ul>
-          <li>BLE operativo</li>
-          <li>PS1 en depuración ACK/DATA</li>
           <li>Hardware V2 / PCB V2.2</li>
-          <li>AutoFire por placa secundaria</li>
+          <li>Firmware base con ESP32</li>
+          <li>Modo PS1 en depuración ACK/DATA</li>
+          <li>Documentación pública de reparación</li>
         </ul>
       </div>
     </section>
 
     <section id="features" class="section">
       <p class="eyebrow">Características</p>
-      <h2>Placa de repuesto para preservar el ACT Labs REX.</h2>
+      <h2>Una placa de repuesto para preservar el ACT Labs REX.</h2>
       <div class="grid three">
         <article class="card">
-          <h3>ESP32</h3>
-          <p>Control principal con GPIO documentados, alimentación dedicada y firmware editable.</p>
+          <h3>Repuesto abierto</h3>
+          <p>Alternativa documentada para una pieza que ya no se fabrica ni se consigue fácilmente.</p>
         </article>
         <article class="card">
-          <h3>Bluetooth HID</h3>
-          <p>Modo inalámbrico para funcionar como gamepad BLE cuando se usa con batería.</p>
+          <h3>Compatibilidad PS1</h3>
+          <p>Diseñada alrededor del protocolo PS1 cableado usando DATA, CMD, ATT, CLK y ACK.</p>
         </article>
         <article class="card">
-          <h3>PS1 cableado</h3>
-          <p>Emulación de control digital PS1 con DATA, CMD, ATT, CLK y ACK.</p>
+          <h3>Fabricación documentada</h3>
+          <p>Incluye esquemáticos, PCB, BOM, POS, mapeos de GPIO y notas de revisión.</p>
         </article>
       </div>
     </section>
@@ -73,16 +74,16 @@
     <section id="hardware" class="section split">
       <div>
         <p class="eyebrow">Hardware</p>
-        <h2>Documentación pensada para fabricar y depurar.</h2>
+        <h2>Documentación pensada para reparar, fabricar y depurar.</h2>
         <p>
-          El repositorio conserva esquemáticos, PDFs de PCB, BOM, POS, mapeos de GPIO y notas de revisión
-          para mantener trazabilidad entre firmware, placa principal y módulo AutoFire.
+          El repositorio conserva esquemáticos, PDFs de PCB, archivos de fabricación, mapeos y notas
+          técnicas para que otros usuarios puedan recuperar o mantener un ACT Labs REX Arcade Stick de PS1.
         </p>
       </div>
       <div class="stats">
         <span><strong>V2</strong>Hardware</span>
         <span><strong>V2.2</strong>PCB</span>
-        <span><strong>ESP32</strong>Core</span>
+        <span><strong>PS1</strong>Target</span>
       </div>
     </section>
 
