@@ -127,4 +127,3 @@ Este repositorio queda limitado al ACT Labs REX / PS1. Las ideas de otras consol
 4. Depurar ACK/DATA del protocolo PS1 con analizador logico.
 5. Confirmar pull-ups reales contra la PCB antes de fabricar.
 6. Mantener BOM/POS exportados desde KiCad antes de fabricar.
-7. Activar GitHub Pages desde `Settings > Pages > Deploy from branch > main / docs`.
