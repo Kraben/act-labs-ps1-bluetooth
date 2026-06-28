@@ -1,8 +1,24 @@
-# ACT Labs PS1 Bluetooth / AutoFire
+# KrabenStick ESP32
 
-Documentación técnica consolidada para la conversión de un tablero ACT-LABS / PS1 a control híbrido PS1-Bluetooth usando ESP32, con soporte para modo PS1, modo Bluetooth HID y placa secundaria AutoFire.
+Plataforma open-source para arcade sticks y controles personalizados basados en ESP32.
+
+Este proyecto comenzó como una conversión de tablero ACT-LABS / PS1 a control híbrido PS1-Bluetooth, pero la marca queda preparada para crecer hacia una plataforma más amplia: modo PS1 cableado, Bluetooth HID, AutoFire y futuras variantes multi-consola.
 
 > Estado actual: Hardware V2 / PCB V2.2, BLE operativo y protocolo PS1 en depuración de ACK/DATA.
+
+## Sitio del proyecto
+
+La landing page inicial está en:
+
+[`docs/index.html`](docs/index.html)
+
+Cuando GitHub Pages esté activo desde la carpeta `docs/`, el sitio se podrá publicar como:
+
+```text
+https://kraben.github.io/act-labs-ps1-bluetooth/
+```
+
+Si más adelante se cambia el nombre del repositorio, GitHub redirige automáticamente la URL anterior, pero conviene actualizar los enlaces internos.
 
 ## Contenido del repositorio
 
@@ -10,6 +26,8 @@ Documentación técnica consolidada para la conversión de un tablero ACT-LABS /
 .
 ├── README.md
 ├── docs/
+│   ├── index.html
+│   ├── site.css
 │   ├── arquitectura.md
 │   ├── mapeo-gpio.md
 │   ├── conectores.md
@@ -56,7 +74,7 @@ Documentación técnica consolidada para la conversión de un tablero ACT-LABS /
 
 ## Resumen del proyecto
 
-El sistema usa un ESP32 DevKit V1 como controlador principal. El mismo hardware debe poder funcionar en dos escenarios:
+El sistema usa un ESP32 DevKit V1 como controlador principal. El mismo hardware debe poder funcionar en tres escenarios:
 
 1. **Modo PS1/PS2 cableado**: el ESP32 emula un control digital PS1 usando DATA, CMD, ATT, CLK y ACK.
 2. **Modo Bluetooth HID**: el ESP32 funciona como gamepad BLE cuando se usa con batería.
@@ -115,3 +133,4 @@ La documentación de protocolos queda separada en `docs/interfaces/` para permit
 3. Depurar ACK/DATA del protocolo PS1 con analizador lógico.
 4. Confirmar pull-ups reales contra la PCB antes de fabricar.
 5. Mantener BOM/POS exportados desde KiCad antes de fabricar.
+6. Activar GitHub Pages desde `Settings > Pages > Deploy from branch > main / docs`.
