@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KrabenStick ESP32</title>
+  <meta name="description" content="Plataforma open-source para arcade sticks y controles personalizados basados en ESP32." />
+  <link rel="stylesheet" href="./site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="KrabenStick ESP32">
+      <span class="brand-mark">K</span>
+      <span>KrabenStick</span>
+    </a>
+    <nav>
+      <a href="#features">Características</a>
+      <a href="#hardware">Hardware</a>
+      <a href="#docs">Docs</a>
+      <a href="https://github.com/Kraben/act-labs-ps1-bluetooth">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ESP32 Arcade Controller Platform</p>
+        <h1>Firmware y hardware open-source para arcade sticks con ESP32.</h1>
+        <p class="hero-text">
+          KrabenStick nace como una plataforma modular para controles arcade, modo PS1 cableado,
+          Bluetooth HID, AutoFire y futuras variantes multi-consola.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="../README.md">Ver proyecto</a>
+          <a class="button" href="#docs">Documentación</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Estado del proyecto">
+        <div class="glow"></div>
+        <h2>KrabenStick ESP32</h2>
+        <p>Base actual: ESP32 DevKit V1</p>
+        <ul>
+          <li>BLE operativo</li>
+          <li>PS1 en depuración ACK/DATA</li>
+          <li>Hardware V2 / PCB V2.2</li>
+          <li>AutoFire por placa secundaria</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <p class="eyebrow">Características</p>
+      <h2>Una base para varias generaciones de controles.</h2>
+      <div class="grid three">
+        <article class="card">
+          <h3>ESP32</h3>
+          <p>Control principal con GPIO documentados, alimentación dedicada y firmware editable.</p>
+        </article>
+        <article class="card">
+          <h3>Bluetooth HID</h3>
+          <p>Modo inalámbrico para funcionar como gamepad BLE cuando se usa con batería.</p>
+        </article>
+        <article class="card">
+          <h3>PS1 cableado</h3>
+          <p>Emulación de control digital PS1 con DATA, CMD, ATT, CLK y ACK.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="hardware" class="section split">
+      <div>
+        <p class="eyebrow">Hardware</p>
+        <h2>Documentación pensada para fabricar y depurar.</h2>
+        <p>
+          El repositorio conserva esquemáticos, PDFs de PCB, BOM, POS, mapeos de GPIO y notas de revisión
+          para mantener trazabilidad entre firmware, placa principal y módulo AutoFire.
+        </p>
+      </div>
+      <div class="stats">
+        <span><strong>V2</strong>Hardware</span>
+        <span><strong>V2.2</strong>PCB</span>
+        <span><strong>ESP32</strong>Core</span>
+      </div>
+    </section>
+
+    <section id="docs" class="section">
+      <p class="eyebrow">Documentación</p>
+      <h2>Entradas rápidas</h2>
+      <div class="grid docs-grid">
+        <a class="doc-link" href="./arquitectura.md">Arquitectura</a>
+        <a class="doc-link" href="./mapeo-gpio.md">Mapeo GPIO</a>
+        <a class="doc-link" href="./conectores.md">Conectores</a>
+        <a class="doc-link" href="./firmware.md">Firmware</a>
+        <a class="doc-link" href="./autofire.md">AutoFire</a>
+        <a class="doc-link" href="./interfaces/ps1.md">Interfaz PS1</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>KrabenStick ESP32</span>
+    <span>Open-source arcade controller platform</span>
+  </footer>
+</body>
+</html>
