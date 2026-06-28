@@ -12,7 +12,7 @@ La landing page inicial esta en:
 
 [`docs/index.html`](docs/index.html)
 
-Sitio se podra Web:
+Sitio  Web:
 
 ```text
 https://kraben.github.io/act-labs-ps1-bluetooth/
