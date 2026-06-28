@@ -4,7 +4,7 @@ Placa de repuesto open-source para el **ACT Labs REX Arcade Stick de PS1**.
 
 El objetivo de este repositorio es conservar y documentar una alternativa de reemplazo para el control ACT Labs REX, ya que la pieza original ya no se fabrica ni se consigue facilmente. Este proyecto se mantiene publico como referencia de reparacion, fabricacion y preservacion del hardware.
 
-> Estado actual: Hardware V2 / PCB V2.2, BLE operativo y protocolo PS1 en depuracion de ACK/DATA.
+> Estado actual: Hardware V2 / PCB V2.2, BLE operativo, PS1 en depuracion de ACK/DATA y compatibilidad PS2 aun no implementada.
 
 ## Sitio del proyecto
 
@@ -74,9 +74,11 @@ El sistema usa un ESP32 DevKit V1 como controlador principal para reemplazar la 
 
 Escenarios documentados en este repositorio:
 
-1. **Modo PS1/PS2 cableado**: el ESP32 emula un control digital PS1 usando DATA, CMD, ATT, CLK y ACK.
+1. **Modo PS1 cableado**: el ESP32 emula un control digital PS1 usando DATA, CMD, ATT, CLK y ACK.
 2. **Modo Bluetooth HID**: el ESP32 funciona como gamepad BLE cuando se usa con bateria.
 3. **AutoFire**: una placa secundaria con switches SPDT permite activar turbo por boton y controlar el encendido desde bateria.
+
+> Nota: la compatibilidad con **PS2** aun no esta implementada. Aunque el conector/protocolo base comparte similitudes con PS1, esta revision se esta validando primero como control PS1.
 
 ## Alcance
 
@@ -90,6 +92,7 @@ Este repositorio queda limitado al ACT Labs REX / PS1. Las ideas de otras consol
 | KiCad | Archivos generados en KiCad 10 |
 | BLE | Operativo |
 | PS1 | En depuracion de ACK/DATA |
+| PS2 | No implementado todavia |
 | Alimentacion | TP4056 externo, bateria PS Vita 3.7 V, LD1117-3.3 y diodo Schottky |
 
 ## Referencias rapidas
