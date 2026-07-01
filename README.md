@@ -7,6 +7,8 @@ Status: Hardware V2 / PCB V2.2
 Firmware: PS1 actualizado
 BLE: operativo
 PS2 / Hybrid: listo, reservado para distribucion privada
+Fabricacion: Gerbers actualizados
+Edicion: KiCad completo actualizado
 ```
 
 ## Project Dashboard
@@ -17,6 +19,8 @@ PS2 / Hybrid: listo, reservado para distribucion privada
 | Firmware PS1 | Actualizado manualmente | Publico |
 | BLE HID | Operativo | Publico |
 | AutoFire | Documentado | Publico |
+| KiCad editable | Actualizado en `hardware/kicad/ACT_Labs_REX/` | Publico |
+| Gerbers fabricacion | Actualizados en `hardware/fabrication/gerbers/ACT_Labs_REX/` | Publico |
 | PS2 / DualShock | Listo | Reservado |
 | PS1/PS2/BLE Hybrid | Listo | Reservado |
 
@@ -32,6 +36,8 @@ PS2 / Hybrid: listo, reservado para distribucion privada
 | AutoFire | [`docs/autofire.md`](docs/autofire.md) |
 | BOM | [`docs/bom.md`](docs/bom.md) |
 | Fabricacion | [`docs/fabricacion.md`](docs/fabricacion.md) |
+| KiCad editable | [`hardware/kicad/ACT_Labs_REX/`](hardware/kicad/ACT_Labs_REX/) |
+| Gerbers listos para fabricar | [`hardware/fabrication/gerbers/ACT_Labs_REX/`](hardware/fabrication/gerbers/ACT_Labs_REX/) |
 
 ## Resumen
 
@@ -48,7 +54,7 @@ El sistema usa un ESP32 DevKit V1 como controlador principal para reemplazar la 
 | AutoFire | Placa secundaria con switches SPDT para activar turbo por boton. | Publico |
 | Firmware hibrido | PS1/PS2/BLE | Reservado |
 
-## Estructura
+## Estructura limpia
 
 ```text
 .
@@ -60,13 +66,40 @@ El sistema usa un ESP32 DevKit V1 como controlador principal para reemplazar la 
 │   └── interfaces/ps1.md
 ├── hardware/
 │   ├── fabrication/
+│   │   └── gerbers/
+│   │       └── ACT_Labs_REX/
 │   ├── kicad/
+│   │   └── ACT_Labs_REX/
 │   ├── pdf/
 │   └── images/
 ├── data/
 └── firmware/
     └── ACT_Labs_Controller/
 ```
+
+## Para fabricar vs para editar
+
+| Uso | Carpeta | Contenido |
+|---|---|---|
+| Fabricar PCB | [`hardware/fabrication/gerbers/ACT_Labs_REX/`](hardware/fabrication/gerbers/ACT_Labs_REX/) | Gerbers, drills y job file exportados desde KiCad |
+| Editar proyecto | [`hardware/kicad/ACT_Labs_REX/`](hardware/kicad/ACT_Labs_REX/) | Proyecto KiCad completo |
+| Revisar PDFs | [`hardware/pdf/`](hardware/pdf/) | Esquematicos y PCB en PDF |
+| Revisar datos | [`data/`](data/) | Mapeos, CSV y hojas de apoyo |
+
+## Archivos de fabricacion actuales
+
+| Archivo | Proposito |
+|---|---|
+| `ACT_Labs_REX-F_Cu.gbr` | Cobre superior |
+| `ACT_Labs_REX-B_Cu.gbr` | Cobre inferior |
+| `ACT_Labs_REX-F_Mask.gbr` | Mascara superior |
+| `ACT_Labs_REX-B_Mask.gbr` | Mascara inferior |
+| `ACT_Labs_REX-F_Silkscreen.gbr` | Serigrafia superior |
+| `ACT_Labs_REX-B_Silkscreen.gbr` | Serigrafia inferior |
+| `ACT_Labs_REX-Edge_Cuts.gbr` | Contorno de PCB |
+| `ACT_Labs_REX-PTH.drl` | Taladros metalizados |
+| `ACT_Labs_REX-NPTH.drl` | Taladros no metalizados |
+| `ACT_Labs_REX-job.gbrjob` | Job file de fabricacion |
 
 ## Referencias de hardware
 
@@ -93,6 +126,7 @@ El sistema usa un ESP32 DevKit V1 como controlador principal para reemplazar la 
 
 ## Proximos pasos
 
+- [ ] Validar Gerbers actuales contra visualizador antes de mandar a fabricar.
 - [ ] Corregir el corto START/SELECT reportado en issues antes de una nueva fabricacion.
 - [ ] Validar continuidad entre PCB principal, placa AutoFire y conectores JP.
 - [ ] Revisar la ruta de alimentacion `BATT_FROM_TP`, TP4056, LD1117-3.3 y D1.
