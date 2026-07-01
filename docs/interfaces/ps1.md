@@ -2,9 +2,10 @@
 
 ## Estado
 
-- Estado actual: en depuracion de `ACK` / `DATA`.
-- Objetivo: emular un control digital PS1 cableado desde ESP32.
-- Compatibilidad PS2: aun no implementada. Primero se valida PS1 digital; PS2 queda como pendiente de investigacion/pruebas.
+- Firmware PS1 publico: actualizado para el alcance ACT Labs REX / PS1.
+- Objetivo publico: emular un control digital PS1 cableado desde ESP32.
+- Protocolo PS2 / DualShock: listo a nivel de desarrollo, pero reservado para version privada/paywall.
+- Firmware hibrido PS1/PS2/BLE: listo a nivel de desarrollo, pero no publicado en este repositorio publico.
 
 ## Pines Rev 1.4 / V2
 
@@ -30,14 +31,14 @@
 | 8 | NC |
 | 9 | ACK |
 
-## Deteccion de modo
+## Deteccion de modo publico
 
 | Condicion | Modo |
 |---|---|
 | PS1_ATT = LOW al arrancar | Modo PS1 |
 | PS1_ATT = HIGH al arrancar | Modo Bluetooth |
 
-## Protocolo digital base
+## Protocolo digital base PS1
 
 | Byte | Valor | Descripcion |
 |---:|---|---|
@@ -49,9 +50,17 @@
 
 ## Nota sobre PS2
 
-Aunque PS1 y PS2 comparten conector y una base de comunicacion similar para controles, este proyecto todavia no declara compatibilidad PS2. Cualquier prueba en PS2 debe tratarse como experimental hasta validar handshake, timing, reconocimiento del control y comportamiento de botones.
+PS1 y PS2 comparten conector y una base de comunicacion similar, pero el soporte PS2 / DualShock completo no forma parte del alcance publico de este repositorio.
 
-## Plan de pruebas
+Estado interno:
+
+- Protocolo PS2 / DualShock: listo.
+- Firmware hibrido PS1/PS2/BLE: listo.
+- Distribucion: privada/paywall.
+
+Este repositorio mantiene publica la documentacion de la placa de repuesto ACT Labs REX y el firmware PS1 disponible.
+
+## Plan de pruebas publico PS1
 
 1. Verificar alimentacion y GND comun con consola.
 2. Capturar ATT, CLK, CMD, DATA y ACK con analizador logico.
@@ -60,11 +69,10 @@ Aunque PS1 y PS2 comparten conector y una base de comunicacion similar para cont
 5. Ajustar pulso ACK hasta que la consola reconozca el control.
 6. Probar botones uno por uno.
 7. Activar AutoFire y confirmar alternancia de 50 ms ON / 50 ms OFF.
-8. Una vez PS1 sea estable, documentar pruebas PS2 por separado.
 
 ## Riesgos
 
 - Timing estricto de ACK.
 - Direccion de DATA y niveles electricos.
 - Ruido o pull-up insuficiente en lineas de protocolo.
-- PS2 puede requerir validaciones adicionales antes de considerarse soportado.
+- El soporte PS2 completo queda fuera del alcance publico y debe manejarse en canal privado/paywall.

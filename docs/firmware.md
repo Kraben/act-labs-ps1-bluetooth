@@ -2,14 +2,22 @@
 
 ## Modos
 
+- PS1: firmware publico actualizado para el alcance ACT Labs REX / PS1.
 - BLE HID: funcional.
-- PS1: en depuracion de ACK / DATA.
+- PS2 / DualShock: protocolo listo a nivel de desarrollo, pero reservado para version privada/paywall.
+- Hibrido PS1/PS2/BLE: listo a nivel de desarrollo, pero no publicado en este repositorio publico.
+
+## Politica de publicacion
+
+Este repositorio publico conserva la documentacion y el firmware PS1 disponible para la placa de repuesto ACT Labs REX.
+
+El protocolo PS2 y el firmware hibrido PS1/PS2/BLE se manejaran como trabajo privado/paywall. No se publicara aqui el codigo fuente completo de esas funciones.
 
 ## Deteccion de modo
 
 | Condicion | Modo | Descripcion |
 |---|---|---|
-| PS1_ATT = LOW al arrancar | Modo PS1 | Consola PS1/PS2 activa - emulacion SPI |
+| PS1_ATT = LOW al arrancar | Modo PS1 | Consola PS1 activa - emulacion SPI |
 | PS1_ATT = HIGH al arrancar | Modo Bluetooth | Sin consola - HID Gamepad BLE |
 | SW10 Placa_2 = OFF | Apagado | Sin alimentacion desde bateria |
 
@@ -46,14 +54,24 @@ static constexpr uint8_t PIN_AF_MODE = 15;
 | 3 | Botones 1 | Select/Start/D-Pad - 0=presionado |
 | 4 | Botones 2 | L2/R2/L1/R1/Triangulo/Circulo/Cruz/Cuadrado - 0=presionado |
 
+## Protocolo PS2
+
+El protocolo PS2 / DualShock ya fue desarrollado y queda marcado como listo para distribucion privada/paywall.
+
+Estado publico:
+
+- No se publica el codigo completo en este repositorio.
+- No se documentan aqui los detalles completos de handshake ni modo analogico.
+- Se mantiene como referencia de roadmap privado.
+
 ## Estado actual
 
 | Subsistema | Estado |
 |---|---|
-| Lectura GPIO | Pendiente de validar contra PCB V2 |
+| Firmware PS1 | Actualizado manualmente en el repositorio |
 | BLE HID | Operativo |
-| PS1 DATA | En depuracion |
-| PS1 ACK | En depuracion |
+| PS2 / DualShock | Listo, reservado para paywall |
+| Hibrido PS1/PS2/BLE | Listo, reservado para paywall |
 | AutoFire | Pendiente de validar con placa fisica |
 
 ## Notas para depuracion PS1

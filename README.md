@@ -4,7 +4,7 @@ Placa de repuesto open-source para el **ACT Labs REX Arcade Stick de PS1**.
 
 El objetivo de este repositorio es conservar y documentar una alternativa de reemplazo para el control ACT Labs REX, ya que la pieza original ya no se fabrica ni se consigue facilmente. Este proyecto se mantiene publico como referencia de reparacion, fabricacion y preservacion del hardware.
 
-> Estado actual: Hardware V2 / PCB V2.2, BLE operativo, PS1 en depuracion de ACK/DATA y compatibilidad PS2 aun no implementada.
+> Estado actual: Hardware V2 / PCB V2.2, Firmware PS1 actualizado, BLE operativo. El protocolo PS2 y el firmware hibrido PS1/PS2/BLE estan listos, pero no se publicaran en este repositorio abierto; quedaran reservados para una version privada/paywall.
 
 ## Sitio del proyecto
 
@@ -77,12 +77,13 @@ Escenarios documentados en este repositorio:
 1. **Modo PS1 cableado**: el ESP32 emula un control digital PS1 usando DATA, CMD, ATT, CLK y ACK.
 2. **Modo Bluetooth HID**: el ESP32 funciona como gamepad BLE cuando se usa con bateria.
 3. **AutoFire**: una placa secundaria con switches SPDT permite activar turbo por boton y controlar el encendido desde bateria.
+4. **Firmware hibrido PS1/PS2/BLE**: listo a nivel de desarrollo, pero reservado para distribucion privada/paywall. No forma parte del alcance publico de este repositorio.
 
-> Nota: la compatibilidad con **PS2** aun no esta implementada. Aunque el conector/protocolo base comparte similitudes con PS1, esta revision se esta validando primero como control PS1.
+> Nota: el soporte PS2 y el firmware hibrido PS1/PS2/BLE no se publican aqui. Este repositorio publico queda enfocado en la documentacion de la placa de repuesto ACT Labs REX y el firmware PS1 disponible.
 
 ## Alcance
 
-Este repositorio queda limitado al ACT Labs REX / PS1. Las ideas de otras consolas o proyectos multi-consola se manejaran en repositorios privados separados.
+Este repositorio queda limitado al ACT Labs REX / PS1 publico. Las funciones avanzadas PS2 e hibridas PS1/PS2/BLE se manejaran como trabajo privado/paywall separado.
 
 ## Estado tecnico V2
 
@@ -90,9 +91,10 @@ Este repositorio queda limitado al ACT Labs REX / PS1. Las ideas de otras consol
 |---|---|
 | Hardware | V2 / PCB V2.2 |
 | KiCad | Archivos generados en KiCad 10 |
+| Firmware PS1 | Actualizado manualmente en el repositorio |
 | BLE | Operativo |
-| PS1 | En depuracion de ACK/DATA |
-| PS2 | No implementado todavia |
+| Protocolo PS2 | Listo, reservado para version privada/paywall |
+| Firmware hibrido PS1/PS2/BLE | Listo, no publicado en este repositorio publico |
 | Alimentacion | TP4056 externo, bateria PS Vita 3.7 V, LD1117-3.3 y diodo Schottky |
 
 ## Referencias rapidas
@@ -124,6 +126,6 @@ Este repositorio queda limitado al ACT Labs REX / PS1. Las ideas de otras consol
 1. Corregir el corto START/SELECT reportado en issues antes de una nueva fabricacion.
 2. Validar continuidad entre PCB principal, placa AutoFire y conectores JP.
 3. Revisar la ruta de alimentacion `BATT_FROM_TP`, TP4056, LD1117-3.3 y D1.
-4. Depurar ACK/DATA del protocolo PS1 con analizador logico.
+4. Validar el firmware PS1 actualizado contra hardware fisico.
 5. Confirmar pull-ups reales contra la PCB antes de fabricar.
 6. Mantener BOM/POS exportados desde KiCad antes de fabricar.
