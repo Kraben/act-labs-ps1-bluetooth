@@ -17,7 +17,7 @@ Edicion: KiCad completo actualizado
 |---|---|---|
 | Hardware | V2 / PCB V2.2 | Publico |
 | Firmware PS1 | PS1 Digital v1.1 OK | Publico |
-| Firmware binary | `ActLabs_PS1_Digital_v1.1_OK.bin` | Publico cuando se suba como release/binario |
+| Firmware binary | [`ActLabs_PS1_Digital_v1.1_OK.bin`](firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin) | Publico |
 | BLE HID | Operativo | Publico |
 | AutoFire | Documentado | Publico |
 | KiCad editable | Actualizado en `hardware/kicad/ACT_Labs_REX/` | Publico |
@@ -30,7 +30,8 @@ Edicion: KiCad completo actualizado
 | Recurso | Link |
 |---|---|
 | Sitio web | https://kraben.github.io/act-labs-ps1-bluetooth/ |
-| Firmware | [`docs/firmware.md`](docs/firmware.md) |
+| Descargar firmware PS1 v1.1 | [`ActLabs_PS1_Digital_v1.1_OK.bin`](firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin) |
+| Firmware notes | [`docs/firmware.md`](docs/firmware.md) |
 | Interfaz PS1 | [`docs/interfaces/ps1.md`](docs/interfaces/ps1.md) |
 | Mapeo GPIO | [`docs/mapeo-gpio.md`](docs/mapeo-gpio.md) |
 | Conectores | [`docs/conectores.md`](docs/conectores.md) |
@@ -60,11 +61,10 @@ ActLabs_PS1_Digital_v1.1_OK.bin
 | Estado | OK |
 | Target | ACT Labs REX PS1 Replacement PCB |
 | Hardware | V2 / PCB V2.2 |
-| Archivo | `ActLabs_PS1_Digital_v1.1_OK.bin` |
+| Ruta | [`firmware/releases/PS1_Digital/v1.1/`](firmware/releases/PS1_Digital/v1.1/) |
+| Archivo | [`ActLabs_PS1_Digital_v1.1_OK.bin`](firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin) |
 | SHA256 | `0a8994050381326bf345bf8123c105abefadabf30187247be9129a8c7f34b15c` |
 | MD5 | `f61375d0dea1b9e42a6903105f5fba79` |
-
-> Nota: si el binario no aparece aun en el repositorio, debe subirse manualmente como archivo de release o dentro de `firmware/releases/PS1_Digital/v1.1/`.
 
 ## Modos documentados
 
@@ -107,7 +107,7 @@ ActLabs_PS1_Digital_v1.1_OK.bin
 |---|---|---|
 | Fabricar PCB | [`hardware/fabrication/gerbers/ACT_Labs_REX/`](hardware/fabrication/gerbers/ACT_Labs_REX/) | Gerbers, drills y job file exportados desde KiCad |
 | Editar proyecto | [`hardware/kicad/ACT_Labs_REX/`](hardware/kicad/ACT_Labs_REX/) | Proyecto KiCad completo |
-| Firmware publico | `firmware/releases/PS1_Digital/v1.1/` | Binario PS1 Digital v1.1 cuando se suba |
+| Firmware publico | [`firmware/releases/PS1_Digital/v1.1/`](firmware/releases/PS1_Digital/v1.1/) | Binario PS1 Digital v1.1 |
 | Revisar PDFs | [`hardware/pdf/`](hardware/pdf/) | Esquematicos y PCB en PDF |
 | Revisar datos | [`data/`](data/) | Mapeos, CSV y hojas de apoyo |
 
@@ -167,7 +167,7 @@ Para este proyecto, lo mas practico seria usar GitHub Pages como landing/catalog
 
 ## Proximos pasos
 
-- [ ] Subir `ActLabs_PS1_Digital_v1.1_OK.bin` como release o dentro de `firmware/releases/PS1_Digital/v1.1/`.
+- [ ] Validar descarga y flasheo de `ActLabs_PS1_Digital_v1.1_OK.bin`.
 - [ ] Validar Gerbers actuales contra visualizador antes de mandar a fabricar.
 - [ ] Corregir el corto START/SELECT reportado en issues antes de una nueva fabricacion.
 - [ ] Validar continuidad entre PCB principal, placa AutoFire y conectores JP.
