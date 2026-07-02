@@ -1,15 +1,28 @@
 # Firmware
 
+## Version publica actual
+
+| Campo | Valor |
+|---|---|
+| Version | PS1 Digital v1.1 |
+| Estado | OK |
+| Archivo | [`ActLabs_PS1_Digital_v1.1_OK.bin`](../firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin) |
+| Ruta | [`firmware/releases/PS1_Digital/v1.1/`](../firmware/releases/PS1_Digital/v1.1/) |
+| Target | ACT Labs REX PS1 Replacement PCB |
+| Hardware | V2 / PCB V2.2 |
+| SHA256 | `0a8994050381326bf345bf8123c105abefadabf30187247be9129a8c7f34b15c` |
+| MD5 | `f61375d0dea1b9e42a6903105f5fba79` |
+
 ## Modos
 
-- PS1: firmware publico actualizado para el alcance ACT Labs REX / PS1.
+- PS1: firmware publico actualizado a PS1 Digital v1.1 OK para el alcance ACT Labs REX / PS1.
 - BLE HID: funcional.
 - PS2 / DualShock: protocolo listo a nivel de desarrollo, pero reservado para version privada/paywall.
 - Hibrido PS1/PS2/BLE: listo a nivel de desarrollo, pero no publicado en este repositorio publico.
 
 ## Politica de publicacion
 
-Este repositorio publico conserva la documentacion y el firmware PS1 disponible para la placa de repuesto ACT Labs REX.
+Este repositorio publico conserva la documentacion, hardware, Gerbers y firmware PS1 disponible para la placa de repuesto ACT Labs REX.
 
 El protocolo PS2 y el firmware hibrido PS1/PS2/BLE se manejaran como trabajo privado/paywall. No se publicara aqui el codigo fuente completo de esas funciones.
 
@@ -68,7 +81,7 @@ Estado publico:
 
 | Subsistema | Estado |
 |---|---|
-| Firmware PS1 | Actualizado manualmente en el repositorio |
+| Firmware PS1 | PS1 Digital v1.1 OK publicado como binario |
 | BLE HID | Operativo |
 | PS2 / DualShock | Listo, reservado para paywall |
 | Hibrido PS1/PS2/BLE | Listo, reservado para paywall |
@@ -81,3 +94,9 @@ Estado publico:
 3. Confirmar pulso ACK en LOW y retorno a HIGH.
 4. Probar primero respuesta digital basica 0x41 0x5A antes de mapear botones completos.
 5. Validar START en GPIO2 y SELECT en GPIO16; estos valores reemplazan GPIO21/GPIO22 de documentacion previa.
+
+## Notas de release
+
+- Descargar el binario desde `firmware/releases/PS1_Digital/v1.1/`.
+- Confirmar checksum antes de flashear.
+- Probar primero en hardware ACT Labs REX V2 / PCB V2.2.
