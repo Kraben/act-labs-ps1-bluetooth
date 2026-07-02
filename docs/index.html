@@ -34,21 +34,21 @@
           moderna para el ACT Labs REX Arcade Stick de PS1.
         </p>
         <div class="actions">
-          <a class="button primary" href="https://github.com/Kraben/act-labs-ps1-bluetooth">Ver GitHub</a>
+          <a class="button primary" href="../firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin">Descargar firmware v1.1</a>
+          <a class="button" href="https://github.com/Kraben/act-labs-ps1-bluetooth">Ver GitHub</a>
           <a class="button" href="#fabrication">Archivos de fabricacion</a>
-          <a class="button" href="#docs">Documentacion</a>
         </div>
       </div>
 
       <aside class="hero-card" aria-label="Estado del proyecto">
         <div class="glow"></div>
         <img class="card-logo" src="./logo/krabenstick-logo.png" alt="" />
-        <span class="pill success">Hardware V2 / PCB V2.2</span>
+        <span class="pill success">Firmware PS1 Digital v1.1 OK</span>
         <h2>Implementacion actualizada</h2>
         <ul>
+          <li>Firmware PS1 v1.1 publicado como binario</li>
           <li>KiCad completo actualizado</li>
           <li>Gerbers listos para revisar y fabricar</li>
-          <li>Firmware PS1 actualizado manualmente</li>
           <li>BLE operativo documentado</li>
         </ul>
       </aside>
@@ -75,8 +75,8 @@
         </article>
         <article class="metric-card">
           <span>Firmware</span>
-          <strong>PS1</strong>
-          <p>Firmware publico actualizado para ACT Labs REX.</p>
+          <strong>PS1 v1.1</strong>
+          <p>Binario publico disponible para ACT Labs REX.</p>
         </article>
       </div>
     </section>
@@ -102,8 +102,8 @@ hardware/fabrication/gerbers/ACT_Labs_REX/
 Para editar:
 hardware/kicad/ACT_Labs_REX/
 
-Revision:
-ACT Labs REX PCB V2.2</code></pre>
+Firmware publico:
+firmware/releases/PS1_Digital/v1.1/</code></pre>
       </div>
     </section>
 
@@ -123,19 +123,23 @@ ACT Labs REX PCB V2.2</code></pre>
 
     <section id="firmware" class="section split reverse">
       <div class="flow-card">
-        <div class="flow-row"><span>PS1</span><b>Publico</b></div>
+        <div class="flow-row"><span>PS1 Digital v1.1</span><b>Publicado</b></div>
         <div class="flow-row"><span>BLE HID</span><b>Documentado</b></div>
         <div class="flow-row muted"><span>PS2 / DualShock</span><b>Reservado</b></div>
         <div class="flow-row muted"><span>PS1/PS2/BLE Hybrid</span><b>Reservado</b></div>
       </div>
       <div>
         <p class="eyebrow">Firmware</p>
-        <h2>PS1 publico, funciones hibridas reservadas.</h2>
+        <h2>PS1 v1.1 publico, funciones hibridas reservadas.</h2>
         <p>
-          El firmware PS1 disponible fue actualizado manualmente. El protocolo PS2 / DualShock y el
+          El firmware publico actual es <strong>ActLabs_PS1_Digital_v1.1_OK.bin</strong>. El protocolo PS2 / DualShock y el
           firmware hibrido PS1/PS2/BLE ya estan listos a nivel de desarrollo, pero se mantienen fuera
           del repositorio publico.
         </p>
+        <div class="actions compact">
+          <a class="button primary" href="../firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin">Descargar .bin</a>
+          <a class="button" href="./firmware.md">Notas de firmware</a>
+        </div>
       </div>
     </section>
 
@@ -146,7 +150,7 @@ ACT Labs REX PCB V2.2</code></pre>
         <a class="doc-link" href="./arquitectura.md"><span>Arquitectura</span><small>Diseno general</small></a>
         <a class="doc-link" href="./mapeo-gpio.md"><span>Mapeo GPIO</span><small>Pines ESP32</small></a>
         <a class="doc-link" href="./conectores.md"><span>Conectores</span><small>JP y cableado</small></a>
-        <a class="doc-link" href="./firmware.md"><span>Firmware</span><small>Estado y modos</small></a>
+        <a class="doc-link" href="./firmware.md"><span>Firmware</span><small>PS1 Digital v1.1</small></a>
         <a class="doc-link" href="./autofire.md"><span>AutoFire</span><small>Turbo y placa secundaria</small></a>
         <a class="doc-link" href="./interfaces/ps1.md"><span>Interfaz PS1</span><small>DATA CMD ATT CLK ACK</small></a>
       </div>
