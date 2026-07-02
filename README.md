@@ -4,7 +4,7 @@
 
 ```text
 Status: Hardware V2 / PCB V2.2
-Firmware: PS1 actualizado
+Firmware: PS1 Digital v1.1 OK
 BLE: operativo
 PS2 / Hybrid: listo, reservado para distribucion privada
 Fabricacion: Gerbers actualizados
@@ -16,7 +16,8 @@ Edicion: KiCad completo actualizado
 | Area | Estado | Alcance |
 |---|---|---|
 | Hardware | V2 / PCB V2.2 | Publico |
-| Firmware PS1 | Actualizado manualmente | Publico |
+| Firmware PS1 | PS1 Digital v1.1 OK | Publico |
+| Firmware binary | `ActLabs_PS1_Digital_v1.1_OK.bin` | Publico cuando se suba como release/binario |
 | BLE HID | Operativo | Publico |
 | AutoFire | Documentado | Publico |
 | KiCad editable | Actualizado en `hardware/kicad/ACT_Labs_REX/` | Publico |
@@ -44,6 +45,26 @@ Edicion: KiCad completo actualizado
 El objetivo de este repositorio es conservar y documentar una alternativa de reemplazo para el control ACT Labs REX, ya que la pieza original ya no se fabrica ni se consigue facilmente.
 
 El sistema usa un ESP32 DevKit V1 como controlador principal para reemplazar la electronica del ACT Labs REX Arcade Stick de PS1.
+
+## Firmware publico PS1
+
+La version publica actual del firmware es:
+
+```text
+ActLabs_PS1_Digital_v1.1_OK.bin
+```
+
+| Campo | Valor |
+|---|---|
+| Version | PS1 Digital v1.1 |
+| Estado | OK |
+| Target | ACT Labs REX PS1 Replacement PCB |
+| Hardware | V2 / PCB V2.2 |
+| Archivo | `ActLabs_PS1_Digital_v1.1_OK.bin` |
+| SHA256 | `0a8994050381326bf345bf8123c105abefadabf30187247be9129a8c7f34b15c` |
+| MD5 | `f61375d0dea1b9e42a6903105f5fba79` |
+
+> Nota: si el binario no aparece aun en el repositorio, debe subirse manualmente como archivo de release o dentro de `firmware/releases/PS1_Digital/v1.1/`.
 
 ## Modos documentados
 
@@ -74,7 +95,10 @@ El sistema usa un ESP32 DevKit V1 como controlador principal para reemplazar la 
 │   └── images/
 ├── data/
 └── firmware/
-    └── ACT_Labs_Controller/
+    ├── ACT_Labs_Controller/
+    └── releases/
+        └── PS1_Digital/
+            └── v1.1/
 ```
 
 ## Para fabricar vs para editar
@@ -83,6 +107,7 @@ El sistema usa un ESP32 DevKit V1 como controlador principal para reemplazar la 
 |---|---|---|
 | Fabricar PCB | [`hardware/fabrication/gerbers/ACT_Labs_REX/`](hardware/fabrication/gerbers/ACT_Labs_REX/) | Gerbers, drills y job file exportados desde KiCad |
 | Editar proyecto | [`hardware/kicad/ACT_Labs_REX/`](hardware/kicad/ACT_Labs_REX/) | Proyecto KiCad completo |
+| Firmware publico | `firmware/releases/PS1_Digital/v1.1/` | Binario PS1 Digital v1.1 cuando se suba |
 | Revisar PDFs | [`hardware/pdf/`](hardware/pdf/) | Esquematicos y PCB en PDF |
 | Revisar datos | [`data/`](data/) | Mapeos, CSV y hojas de apoyo |
 
@@ -124,8 +149,25 @@ El sistema usa un ESP32 DevKit V1 como controlador principal para reemplazar la 
 | SELECT | 16 |
 | AF_MODE | 15 |
 
+## Tienda / distribucion privada
+
+GitHub Pages puede funcionar como catalogo o landing page de venta, pero no como tienda completa con carrito, login, pagos y descargas privadas.
+
+Opciones recomendadas:
+
+| Opcion | Uso recomendado |
+|---|---|
+| GitHub Pages + PayPal/Mercado Pago | Catalogo simple y contacto directo |
+| GitHub Pages + Gumroad/Payhip/Ko-fi | Venta de firmware, archivos digitales o acceso privado |
+| GitHub Pages + Stripe Payment Links | Botones de pago profesionales sin backend propio |
+| Shopify/WooCommerce | Tienda completa con carrito, inventario y pedidos |
+| GitHub Sponsors | Apoyo/donaciones, no tienda formal |
+
+Para este proyecto, lo mas practico seria usar GitHub Pages como landing/catalogo y enlazar un checkout externo para la version privada del firmware PS2 / Hybrid.
+
 ## Proximos pasos
 
+- [ ] Subir `ActLabs_PS1_Digital_v1.1_OK.bin` como release o dentro de `firmware/releases/PS1_Digital/v1.1/`.
 - [ ] Validar Gerbers actuales contra visualizador antes de mandar a fabricar.
 - [ ] Corregir el corto START/SELECT reportado en issues antes de una nueva fabricacion.
 - [ ] Validar continuidad entre PCB principal, placa AutoFire y conectores JP.
