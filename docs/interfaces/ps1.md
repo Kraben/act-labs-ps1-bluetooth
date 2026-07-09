@@ -4,8 +4,8 @@
 
 - Firmware PS1 publico: actualizado para el alcance ACT Labs REX / PS1.
 - Objetivo publico: emular un control digital PS1 cableado desde ESP32.
-- Protocolo PS2 / DualShock: listo a nivel de desarrollo, pero reservado para version privada/paywall.
-- Firmware hibrido PS1/PS2/BLE: listo a nivel de desarrollo, pero no publicado en este repositorio publico.
+- Protocolo PS2 / DualShock: listo en la build Hybrid AUTO de apoyo/donativos.
+- Firmware hibrido PS1/PS2/BLE: listo en la build Hybrid AUTO, no publicado como codigo fuente completo en este repositorio publico.
 
 ## Pines Rev 1.4 / V2
 
@@ -50,13 +50,14 @@
 
 ## Nota sobre PS2
 
-PS1 y PS2 comparten conector y una base de comunicacion similar, pero el soporte PS2 / DualShock completo no forma parte del alcance publico de este repositorio.
+PS1 y PS2 comparten conector y una base de comunicacion similar, pero el soporte PS2 / DualShock completo no forma parte del firmware PS1 publico.
 
-Estado interno:
+Estado:
 
-- Protocolo PS2 / DualShock: listo.
-- Firmware hibrido PS1/PS2/BLE: listo.
-- Distribucion: privada/paywall.
+- Protocolo PS2 / DualShock: listo en build Hybrid AUTO.
+- Firmware hibrido PS1/PS2/BLE: listo en build Hybrid AUTO.
+- Distribucion: build de apoyo / donativos.
+- Codigo fuente completo: no publicado en este repositorio publico.
 
 Este repositorio mantiene publica la documentacion de la placa de repuesto ACT Labs REX y el firmware PS1 disponible.
 
@@ -75,4 +76,4 @@ Este repositorio mantiene publica la documentacion de la placa de repuesto ACT L
 - Timing estricto de ACK.
 - Direccion de DATA y niveles electricos.
 - Ruido o pull-up insuficiente en lineas de protocolo.
-- El soporte PS2 completo queda fuera del alcance publico y debe manejarse en canal privado/paywall.
+- El soporte PS2 completo queda fuera del firmware PS1 publico y se maneja como build Hybrid AUTO de apoyo.
