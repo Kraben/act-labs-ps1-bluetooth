@@ -4,9 +4,9 @@
 
 ```text
 Status: Hardware V2 / KiCad actualizado
-Firmware: PS1 Digital v1.1 OK
+Firmware publico: PS1 Digital v1.1 OK
+Firmware de apoyo: Hybrid AUTO PS1 / PS2 / BLE
 BLE: operativo
-PS2 / Hybrid: listo, reservado para distribucion privada
 Fabricacion: Gerbers pendientes de actualizar
 Edicion: KiCad completo actualizado
 ```
@@ -22,8 +22,8 @@ Edicion: KiCad completo actualizado
 | AutoFire | Documentado | Publico |
 | KiCad editable | Actualizado en `hardware/kicad/ACT_Labs_REX/` | Publico |
 | Gerbers fabricacion | Pendientes de regenerar desde la revision KiCad actual | Publico |
-| PS2 / DualShock | Listo | Reservado |
-| PS1/PS2/BLE Hybrid | Listo | Reservado |
+| PS2 / DualShock | Listo en firmware Hybrid AUTO | Build de apoyo / donativos |
+| PS1/PS2/BLE Hybrid | Listo en firmware Hybrid AUTO | Build de apoyo / donativos |
 
 ## Quick Links
 
@@ -32,6 +32,7 @@ Edicion: KiCad completo actualizado
 | Sitio web | https://kraben.github.io/act-labs-ps1-bluetooth/ |
 | Descargar firmware PS1 v1.1 | [`ActLabs_PS1_Digital_v1.1_OK.bin`](firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin) |
 | Firmware notes | [`docs/firmware.md`](docs/firmware.md) |
+| Firmware Hybrid AUTO | [`docs/supporter-build.md`](docs/supporter-build.md) |
 | Interfaz PS1 | [`docs/interfaces/ps1.md`](docs/interfaces/ps1.md) |
 | Mapeo GPIO | [`docs/mapeo-gpio.md`](docs/mapeo-gpio.md) |
 | Conectores | [`docs/conectores.md`](docs/conectores.md) |
@@ -66,6 +67,19 @@ ActLabs_PS1_Digital_v1.1_OK.bin
 | SHA256 | `0a8994050381326bf345bf8123c105abefadabf30187247be9129a8c7f34b15c` |
 | MD5 | `f61375d0dea1b9e42a6903105f5fba79` |
 
+## Firmware Hybrid AUTO de apoyo
+
+El firmware Hybrid AUTO es una build avanzada para ESP32 pensada como opcion de apoyo/donativos al proyecto.
+
+| Funcion | Estado |
+|---|---|
+| PS1 cableado | Listo |
+| PS2 / DualShock | Listo |
+| Bluetooth BLE HID | Listo |
+| Deteccion automatica PS1 / PS2 / BLE | Listo |
+
+La documentacion publica se mantiene en [`docs/supporter-build.md`](docs/supporter-build.md). El codigo fuente completo del firmware Hybrid AUTO no se publica en este repositorio publico.
+
 ## Modos documentados
 
 | Modo | Descripcion | Estado |
@@ -73,7 +87,7 @@ ActLabs_PS1_Digital_v1.1_OK.bin
 | PS1 cableado | ESP32 emula un control digital PS1 usando DATA, CMD, ATT, CLK y ACK. | Publico |
 | Bluetooth HID | ESP32 funciona como gamepad BLE cuando se usa con bateria. | Publico |
 | AutoFire | Placa secundaria con switches SPDT para activar turbo por boton. | Publico |
-| Firmware hibrido | PS1/PS2/BLE | Reservado |
+| Firmware Hybrid AUTO | PS1 / PS2 / BLE con deteccion automatica. | Build de apoyo / donativos |
 
 ## Estructura limpia
 
@@ -81,6 +95,7 @@ ActLabs_PS1_Digital_v1.1_OK.bin
 .
 ├── docs/
 │   ├── firmware.md
+│   ├── supporter-build.md
 │   ├── mapeo-gpio.md
 │   ├── conectores.md
 │   ├── autofire.md
@@ -151,21 +166,20 @@ ActLabs_PS1_Digital_v1.1_OK.bin
 | SELECT | 16 |
 | AF_MODE | 15 |
 
-## Tienda / distribucion privada
+## Apoyo / donativos
 
-GitHub Pages puede funcionar como catalogo o landing page de venta, pero no como tienda completa con carrito, login, pagos y descargas privadas.
+GitHub Pages puede funcionar como landing page del proyecto y enlazar a una plataforma externa para apoyo/donativos.
 
 Opciones recomendadas:
 
 | Opcion | Uso recomendado |
 |---|---|
 | GitHub Pages + PayPal/Mercado Pago | Catalogo simple y contacto directo |
-| GitHub Pages + Gumroad/Payhip/Ko-fi | Venta de firmware, archivos digitales o acceso privado |
+| GitHub Pages + Gumroad/Payhip/Ko-fi | Entrega de builds de apoyo, firmware o archivos digitales |
 | GitHub Pages + Stripe Payment Links | Botones de pago profesionales sin backend propio |
-| Shopify/WooCommerce | Tienda completa con carrito, inventario y pedidos |
-| GitHub Sponsors | Apoyo/donaciones, no tienda formal |
+| GitHub Sponsors | Apoyo/donaciones recurrentes |
 
-Para este proyecto, lo mas practico seria usar GitHub Pages como landing/catalogo y enlazar un checkout externo para la version privada del firmware PS2 / Hybrid.
+El repositorio publico mantiene hardware, documentacion y firmware PS1 disponible. La build Hybrid AUTO se maneja como opcion avanzada de apoyo para sostener el desarrollo.
 
 ## Proximos pasos
 
@@ -176,3 +190,4 @@ Para este proyecto, lo mas practico seria usar GitHub Pages como landing/catalog
 - [ ] Revisar la ruta de alimentacion `BATT_FROM_TP`, TP4056, LD1117-3.3 y diodos SS14.
 - [ ] Validar el firmware PS1 actualizado contra hardware fisico.
 - [ ] Confirmar pull-ups reales contra la PCB antes de fabricar.
+- [ ] Preparar binario, checksums y guia de flasheo para la build Hybrid AUTO de apoyo.
