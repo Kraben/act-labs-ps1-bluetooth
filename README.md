@@ -3,11 +3,11 @@
 > Placa de repuesto open-source para el **ACT Labs REX Arcade Stick de PS1**.
 
 ```text
-Status: Hardware V2 / PCB V2.2
+Status: Hardware V2 / KiCad actualizado
 Firmware: PS1 Digital v1.1 OK
 BLE: operativo
 PS2 / Hybrid: listo, reservado para distribucion privada
-Fabricacion: Gerbers actualizados
+Fabricacion: Gerbers pendientes de actualizar
 Edicion: KiCad completo actualizado
 ```
 
@@ -15,13 +15,13 @@ Edicion: KiCad completo actualizado
 
 | Area | Estado | Alcance |
 |---|---|---|
-| Hardware | V2 / PCB V2.2 | Publico |
+| Hardware | V2 / KiCad actualizado | Publico |
 | Firmware PS1 | PS1 Digital v1.1 OK | Publico |
 | Firmware binary | [`ActLabs_PS1_Digital_v1.1_OK.bin`](firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin) | Publico |
 | BLE HID | Operativo | Publico |
 | AutoFire | Documentado | Publico |
 | KiCad editable | Actualizado en `hardware/kicad/ACT_Labs_REX/` | Publico |
-| Gerbers fabricacion | Actualizados en `hardware/fabrication/gerbers/ACT_Labs_REX/` | Publico |
+| Gerbers fabricacion | Pendientes de regenerar desde la revision KiCad actual | Publico |
 | PS2 / DualShock | Listo | Reservado |
 | PS1/PS2/BLE Hybrid | Listo | Reservado |
 
@@ -39,7 +39,7 @@ Edicion: KiCad completo actualizado
 | BOM | [`docs/bom.md`](docs/bom.md) |
 | Fabricacion | [`docs/fabricacion.md`](docs/fabricacion.md) |
 | KiCad editable | [`hardware/kicad/ACT_Labs_REX/`](hardware/kicad/ACT_Labs_REX/) |
-| Gerbers listos para fabricar | [`hardware/fabrication/gerbers/ACT_Labs_REX/`](hardware/fabrication/gerbers/ACT_Labs_REX/) |
+| Gerbers | [`hardware/fabrication/gerbers/ACT_Labs_REX/`](hardware/fabrication/gerbers/ACT_Labs_REX/) |
 
 ## Resumen
 
@@ -60,7 +60,7 @@ ActLabs_PS1_Digital_v1.1_OK.bin
 | Version | PS1 Digital v1.1 |
 | Estado | OK |
 | Target | ACT Labs REX PS1 Replacement PCB |
-| Hardware | V2 / PCB V2.2 |
+| Hardware | V2 / KiCad actualizado |
 | Ruta | [`firmware/releases/PS1_Digital/v1.1/`](firmware/releases/PS1_Digital/v1.1/) |
 | Archivo | [`ActLabs_PS1_Digital_v1.1_OK.bin`](firmware/releases/PS1_Digital/v1.1/ActLabs_PS1_Digital_v1.1_OK.bin) |
 | SHA256 | `0a8994050381326bf345bf8123c105abefadabf30187247be9129a8c7f34b15c` |
@@ -105,13 +105,15 @@ ActLabs_PS1_Digital_v1.1_OK.bin
 
 | Uso | Carpeta | Contenido |
 |---|---|---|
-| Fabricar PCB | [`hardware/fabrication/gerbers/ACT_Labs_REX/`](hardware/fabrication/gerbers/ACT_Labs_REX/) | Gerbers, drills y job file exportados desde KiCad |
-| Editar proyecto | [`hardware/kicad/ACT_Labs_REX/`](hardware/kicad/ACT_Labs_REX/) | Proyecto KiCad completo |
+| Editar proyecto | [`hardware/kicad/ACT_Labs_REX/`](hardware/kicad/ACT_Labs_REX/) | Proyecto KiCad completo actualizado |
+| Fabricar PCB | [`hardware/fabrication/gerbers/ACT_Labs_REX/`](hardware/fabrication/gerbers/ACT_Labs_REX/) | Gerbers pendientes de regenerar desde la revision KiCad actual |
 | Firmware publico | [`firmware/releases/PS1_Digital/v1.1/`](firmware/releases/PS1_Digital/v1.1/) | Binario PS1 Digital v1.1 |
 | Revisar PDFs | [`hardware/pdf/`](hardware/pdf/) | Esquematicos y PCB en PDF |
 | Revisar datos | [`data/`](data/) | Mapeos, CSV y hojas de apoyo |
 
 ## Archivos de fabricacion actuales
+
+> Nota: los Gerbers existentes pueden no corresponder todavia a la revision KiCad mas reciente. Regenerar y validar antes de fabricar.
 
 | Archivo | Proposito |
 |---|---|
@@ -167,10 +169,10 @@ Para este proyecto, lo mas practico seria usar GitHub Pages como landing/catalog
 
 ## Proximos pasos
 
-- [ ] Validar descarga y flasheo de `ActLabs_PS1_Digital_v1.1_OK.bin`.
-- [ ] Validar Gerbers actuales contra visualizador antes de mandar a fabricar.
-- [ ] Corregir el corto START/SELECT reportado en issues antes de una nueva fabricacion.
+- [ ] Regenerar Gerbers desde la revision KiCad actual.
+- [ ] Validar Gerbers nuevos contra visualizador antes de mandar a fabricar.
+- [ ] Validar continuidad START/SELECT contra GND en PCB actualizada.
 - [ ] Validar continuidad entre PCB principal, placa AutoFire y conectores JP.
-- [ ] Revisar la ruta de alimentacion `BATT_FROM_TP`, TP4056, LD1117-3.3 y D1.
+- [ ] Revisar la ruta de alimentacion `BATT_FROM_TP`, TP4056, LD1117-3.3 y diodos SS14.
 - [ ] Validar el firmware PS1 actualizado contra hardware fisico.
 - [ ] Confirmar pull-ups reales contra la PCB antes de fabricar.
